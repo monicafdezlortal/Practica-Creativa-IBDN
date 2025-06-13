@@ -30,10 +30,7 @@ Hemos desplegado por local atraves de la terminal:
 ```bash
 docker-compose up --build
 ```
-o 
-```bash
-docker-compose up
-```
+
 2. **Acceder a los servicios**:
 
 | Servicio     | URL                      |
