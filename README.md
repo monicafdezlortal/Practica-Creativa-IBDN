@@ -1,5 +1,4 @@
-
-#PRÁCTICA CREATIVA
+## PRÁCTICA CREATIVA
 
 Este proyecto implementa una arquitectura completa para predecir retrasos de vuelos en tiempo real utilizando las sigueintes tecnologías: 
  **Docker, Apache Kafka, Apache Spark, NiFi, MongoDB, HDFS, MLflow y Airflow**.
