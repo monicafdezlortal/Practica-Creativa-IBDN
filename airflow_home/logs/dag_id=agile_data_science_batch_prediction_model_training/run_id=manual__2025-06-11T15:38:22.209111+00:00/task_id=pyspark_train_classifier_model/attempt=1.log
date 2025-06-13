@@ -1,0 +1,66 @@
+[2025-06-11T17:38:28.445+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-11T15:38:22.209111+00:00 [queued]>
+[2025-06-11T17:38:28.480+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-11T15:38:22.209111+00:00 [queued]>
+[2025-06-11T17:38:28.480+0200] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-11T17:38:28.481+0200] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2025-06-11T17:38:28.481+0200] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-11T17:38:28.502+0200] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): pyspark_train_classifier_model> on 2025-06-11 15:38:22.209111+00:00
+[2025-06-11T17:38:28.506+0200] {standard_task_runner.py:55} INFO - Started process 172478 to run task
+[2025-06-11T17:38:28.509+0200] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-11T15:38:22.209111+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/setup.py', '--cfg-path', '/tmp/tmp4tff7ax7']
+[2025-06-11T17:38:28.511+0200] {standard_task_runner.py:83} INFO - Job 9: Subtask pyspark_train_classifier_model
+[2025-06-11T17:38:28.632+0200] {task_command.py:388} INFO - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-11T15:38:22.209111+00:00 [running]> on host l090.lab.dit.upm.es
+[2025-06-11T17:38:28.725+0200] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=agile_data_science_batch_prediction_model_training
+AIRFLOW_CTX_TASK_ID=pyspark_train_classifier_model
+AIRFLOW_CTX_EXECUTION_DATE=2025-06-11T15:38:22.209111+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-06-11T15:38:22.209111+00:00
+[2025-06-11T17:38:28.731+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-06-11T17:38:28.732+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\nspark-submit --master local[4]   /home/monica.fernandez/practica_creativa//resources/train_spark_mllib_model.py   /home/monica.fernandez/practica_creativa/']
+[2025-06-11T17:38:28.741+0200] {subprocess.py:86} INFO - Output:
+[2025-06-11T17:38:31.300+0200] {subprocess.py:93} INFO - 25/06/11 17:38:31 WARN Utils: Your hostname, l090 resolves to a loopback address: 127.0.1.1; using 138.4.31.90 instead (on interface enp3s0)
+[2025-06-11T17:38:31.308+0200] {subprocess.py:93} INFO - 25/06/11 17:38:31 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2025-06-11T17:38:32.331+0200] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-06-11T17:38:32.332+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/resources/train_spark_mllib_model.py", line 6, in <module>
+[2025-06-11T17:38:32.332+0200] {subprocess.py:93} INFO -     import mlflow
+[2025-06-11T17:38:32.332+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/mlflow/__init__.py", line 44, in <module>
+[2025-06-11T17:38:32.332+0200] {subprocess.py:93} INFO -     from mlflow import (
+[2025-06-11T17:38:32.332+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/mlflow/artifacts/__init__.py", line 11, in <module>
+[2025-06-11T17:38:32.332+0200] {subprocess.py:93} INFO -     from mlflow.entities.file_info import FileInfo
+[2025-06-11T17:38:32.332+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/mlflow/entities/__init__.py", line 6, in <module>
+[2025-06-11T17:38:32.332+0200] {subprocess.py:93} INFO -     from mlflow.entities.assessment import (
+[2025-06-11T17:38:32.332+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/mlflow/entities/assessment.py", line 12, in <module>
+[2025-06-11T17:38:32.333+0200] {subprocess.py:93} INFO -     from mlflow.entities.assessment_error import AssessmentError
+[2025-06-11T17:38:32.333+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/mlflow/entities/assessment_error.py", line 6, in <module>
+[2025-06-11T17:38:32.333+0200] {subprocess.py:93} INFO -     from mlflow.utils.annotations import experimental
+[2025-06-11T17:38:32.333+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/mlflow/utils/__init__.py", line 10, in <module>
+[2025-06-11T17:38:32.333+0200] {subprocess.py:93} INFO -     from mlflow.utils.pydantic_utils import IS_PYDANTIC_V2_OR_NEWER  # noqa: F401
+[2025-06-11T17:38:32.337+0200] {subprocess.py:93} INFO -     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-06-11T17:38:32.338+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/mlflow/utils/pydantic_utils.py", line 3, in <module>
+[2025-06-11T17:38:32.339+0200] {subprocess.py:93} INFO -     import pydantic
+[2025-06-11T17:38:32.339+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/pydantic/__init__.py", line 5, in <module>
+[2025-06-11T17:38:32.339+0200] {subprocess.py:93} INFO -     from ._migration import getattr_migration
+[2025-06-11T17:38:32.340+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/pydantic/_migration.py", line 4, in <module>
+[2025-06-11T17:38:32.340+0200] {subprocess.py:93} INFO -     from .version import version_short
+[2025-06-11T17:38:32.340+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/pydantic/version.py", line 5, in <module>
+[2025-06-11T17:38:32.340+0200] {subprocess.py:93} INFO -     from pydantic_core import __version__ as __pydantic_core_version__
+[2025-06-11T17:38:32.340+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/pydantic_core/__init__.py", line 30, in <module>
+[2025-06-11T17:38:32.340+0200] {subprocess.py:93} INFO -     from .core_schema import CoreConfig, CoreSchema, CoreSchemaType, ErrorType
+[2025-06-11T17:38:32.340+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/pydantic_core/core_schema.py", line 16, in <module>
+[2025-06-11T17:38:32.340+0200] {subprocess.py:93} INFO -     from typing_extensions import deprecated
+[2025-06-11T17:38:32.340+0200] {subprocess.py:93} INFO - ImportError: cannot import name 'deprecated' from 'typing_extensions' (/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/typing_extensions.py)
+[2025-06-11T17:38:32.392+0200] {subprocess.py:93} INFO - 25/06/11 17:38:32 INFO ShutdownHookManager: Shutdown hook called
+[2025-06-11T17:38:32.393+0200] {subprocess.py:93} INFO - 25/06/11 17:38:32 INFO ShutdownHookManager: Deleting directory /tmp/spark-460806f6-d3f9-4fe2-b276-de5290f3e904
+[2025-06-11T17:38:32.438+0200] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-06-11T17:38:32.473+0200] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/operators/bash.py", line 196, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-06-11T17:38:32.482+0200] {taskinstance.py:1318} INFO - Marking task as UP_FOR_RETRY. dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, execution_date=20250611T153822, start_date=20250611T153828, end_date=20250611T153832
+[2025-06-11T17:38:32.522+0200] {standard_task_runner.py:100} ERROR - Failed to execute job 9 for task pyspark_train_classifier_model (Bash command failed. The command returned a non-zero exit code 1.; 172478)
+[2025-06-11T17:38:32.541+0200] {local_task_job.py:208} INFO - Task exited with return code 1
+[2025-06-11T17:38:32.598+0200] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

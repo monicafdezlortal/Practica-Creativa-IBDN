@@ -1,0 +1,49 @@
+[2025-06-11T18:05:53.484+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-11T16:00:39.133251+00:00 [queued]>
+[2025-06-11T18:05:53.501+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-11T16:00:39.133251+00:00 [queued]>
+[2025-06-11T18:05:53.501+0200] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-11T18:05:53.501+0200] {taskinstance.py:1280} INFO - Starting attempt 2 of 4
+[2025-06-11T18:05:53.501+0200] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-11T18:05:53.521+0200] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): pyspark_train_classifier_model> on 2025-06-11 16:00:39.133251+00:00
+[2025-06-11T18:05:53.525+0200] {standard_task_runner.py:55} INFO - Started process 188746 to run task
+[2025-06-11T18:05:53.527+0200] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-11T16:00:39.133251+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/setup.py', '--cfg-path', '/tmp/tmpnx7cti8s']
+[2025-06-11T18:05:53.529+0200] {standard_task_runner.py:83} INFO - Job 35: Subtask pyspark_train_classifier_model
+[2025-06-11T18:05:53.614+0200] {task_command.py:388} INFO - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-11T16:00:39.133251+00:00 [running]> on host l090.lab.dit.upm.es
+[2025-06-11T18:05:53.690+0200] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=agile_data_science_batch_prediction_model_training
+AIRFLOW_CTX_TASK_ID=pyspark_train_classifier_model
+AIRFLOW_CTX_EXECUTION_DATE=2025-06-11T16:00:39.133251+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-06-11T16:00:39.133251+00:00
+[2025-06-11T18:05:53.691+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-06-11T18:05:53.692+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\nspark-submit --master local[4]   /home/monica.fernandez/practica_creativa//resources/train_spark_mllib_model.py   /home/monica.fernandez/practica_creativa/']
+[2025-06-11T18:05:53.700+0200] {subprocess.py:86} INFO - Output:
+[2025-06-11T18:05:54.906+0200] {taskinstance.py:1479} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-11T18:05:54.906+0200] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2025-06-11T18:05:54.906+0200] {local_task_job.py:112} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-06-11T18:05:54.936+0200] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/operators/bash.py", line 187, in execute
+    result = self.subprocess_hook.run_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 1481, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2025-06-11T18:05:54.967+0200] {taskinstance.py:1318} INFO - Marking task as UP_FOR_RETRY. dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, execution_date=20250611T160039, start_date=20250611T160553, end_date=20250611T160554
+[2025-06-11T18:05:54.969+0200] {process_utils.py:129} INFO - Sending 15 to group 188746. PIDs of all processes in the group: [188747, 188746]
+[2025-06-11T18:05:54.969+0200] {process_utils.py:84} INFO - Sending the signal 15 to group 188746
+[2025-06-11T18:05:54.977+0200] {taskinstance.py:1479} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-06-11T18:05:54.978+0200] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2025-06-11T18:05:54.981+0200] {standard_task_runner.py:100} ERROR - Failed to execute job 35 for task pyspark_train_classifier_model (Task received SIGTERM signal; 188746)
+[2025-06-11T18:05:55.022+0200] {process_utils.py:79} INFO - Process psutil.Process(pid=188746, status='terminated', exitcode=1, started='18:05:52') (188746) terminated with exit code 1
+[2025-06-11T18:05:55.023+0200] {process_utils.py:79} INFO - Process psutil.Process(pid=188747, status='terminated', started='18:05:52') (188747) terminated with exit code None
+[2025-06-11T18:05:55.024+0200] {local_task_job.py:208} INFO - Task exited with return code 143
+[2025-06-11T18:05:55.059+0200] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-11T18:05:59.302+0200] {taskinstance.py:1073} INFO - Dependencies not met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-11T16:00:39.133251+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2025-06-11T18:05:59.308+0200] {taskinstance.py:1073} INFO - Dependencies not met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-11T16:00:39.133251+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2025-06-11T18:05:59.309+0200] {local_task_job.py:147} INFO - Task is not able to be run

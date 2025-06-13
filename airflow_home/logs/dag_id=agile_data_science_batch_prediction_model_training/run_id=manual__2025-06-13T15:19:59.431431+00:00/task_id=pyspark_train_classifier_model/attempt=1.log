@@ -1,0 +1,102 @@
+[2025-06-13T17:20:04.943+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-13T15:19:59.431431+00:00 [queued]>
+[2025-06-13T17:20:04.965+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-13T15:19:59.431431+00:00 [queued]>
+[2025-06-13T17:20:04.965+0200] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-13T17:20:04.965+0200] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2025-06-13T17:20:04.965+0200] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-13T17:20:04.992+0200] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): pyspark_train_classifier_model> on 2025-06-13 15:19:59.431431+00:00
+[2025-06-13T17:20:04.996+0200] {standard_task_runner.py:55} INFO - Started process 37113 to run task
+[2025-06-13T17:20:05.003+0200] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-13T15:19:59.431431+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/setup.py', '--cfg-path', '/tmp/tmpmgl5bj11']
+[2025-06-13T17:20:05.005+0200] {standard_task_runner.py:83} INFO - Job 55: Subtask pyspark_train_classifier_model
+[2025-06-13T17:20:05.128+0200] {task_command.py:388} INFO - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-13T15:19:59.431431+00:00 [running]> on host l089.lab.dit.upm.es
+[2025-06-13T17:20:05.223+0200] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=agile_data_science_batch_prediction_model_training
+AIRFLOW_CTX_TASK_ID=pyspark_train_classifier_model
+AIRFLOW_CTX_EXECUTION_DATE=2025-06-13T15:19:59.431431+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-06-13T15:19:59.431431+00:00
+[2025-06-13T17:20:05.225+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-06-13T17:20:05.226+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\nspark-submit --master local[4]   /home/monica.fernandez/practica_creativa//resources/train_spark_mllib_model.py   /home/monica.fernandez/practica_creativa/']
+[2025-06-13T17:20:05.235+0200] {subprocess.py:86} INFO - Output:
+[2025-06-13T17:20:08.704+0200] {subprocess.py:93} INFO - 25/06/13 17:20:08 WARN Utils: Your hostname, l089 resolves to a loopback address: 127.0.1.1; using 138.4.31.89 instead (on interface enp3s0)
+[2025-06-13T17:20:08.709+0200] {subprocess.py:93} INFO - 25/06/13 17:20:08 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2025-06-13T17:20:15.121+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO SparkContext: Running Spark version 3.5.3
+[2025-06-13T17:20:15.121+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO SparkContext: OS info Linux, 6.1.0-32-amd64, amd64
+[2025-06-13T17:20:15.121+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO SparkContext: Java version 17.0.14
+[2025-06-13T17:20:15.233+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-06-13T17:20:15.420+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO ResourceUtils: ==============================================================
+[2025-06-13T17:20:15.421+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2025-06-13T17:20:15.422+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO ResourceUtils: ==============================================================
+[2025-06-13T17:20:15.423+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO SparkContext: Submitted application: train_spark_mllib_model.py
+[2025-06-13T17:20:15.454+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2025-06-13T17:20:15.467+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO ResourceProfile: Limiting resource is cpu
+[2025-06-13T17:20:15.469+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2025-06-13T17:20:15.619+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO SecurityManager: Changing view acls to: monica.fernandez
+[2025-06-13T17:20:15.620+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO SecurityManager: Changing modify acls to: monica.fernandez
+[2025-06-13T17:20:15.622+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO SecurityManager: Changing view acls groups to:
+[2025-06-13T17:20:15.623+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO SecurityManager: Changing modify acls groups to:
+[2025-06-13T17:20:15.623+0200] {subprocess.py:93} INFO - 25/06/13 17:20:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: monica.fernandez; groups with view permissions: EMPTY; users with modify permissions: monica.fernandez; groups with modify permissions: EMPTY
+[2025-06-13T17:20:16.258+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO Utils: Successfully started service 'sparkDriver' on port 42623.
+[2025-06-13T17:20:16.313+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO SparkEnv: Registering MapOutputTracker
+[2025-06-13T17:20:16.379+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO SparkEnv: Registering BlockManagerMaster
+[2025-06-13T17:20:16.449+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2025-06-13T17:20:16.456+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2025-06-13T17:20:16.467+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2025-06-13T17:20:16.519+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-17db1599-8b47-4d24-b809-dfe5627769c0
+[2025-06-13T17:20:16.549+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2025-06-13T17:20:16.593+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO SparkEnv: Registering OutputCommitCoordinator
+[2025-06-13T17:20:16.782+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2025-06-13T17:20:16.959+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2025-06-13T17:20:16.972+0200] {subprocess.py:93} INFO - 25/06/13 17:20:16 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+[2025-06-13T17:20:17.202+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO Executor: Starting executor ID driver on host 138.4.31.89
+[2025-06-13T17:20:17.204+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO Executor: OS info Linux, 6.1.0-32-amd64, amd64
+[2025-06-13T17:20:17.205+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO Executor: Java version 17.0.14
+[2025-06-13T17:20:17.225+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2025-06-13T17:20:17.226+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@9e12ab1 for default.
+[2025-06-13T17:20:17.262+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33913.
+[2025-06-13T17:20:17.263+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO NettyBlockTransferService: Server created on 138.4.31.89:33913
+[2025-06-13T17:20:17.263+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2025-06-13T17:20:17.269+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 138.4.31.89, 33913, None)
+[2025-06-13T17:20:17.290+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO BlockManagerMasterEndpoint: Registering block manager 138.4.31.89:33913 with 434.4 MiB RAM, BlockManagerId(driver, 138.4.31.89, 33913, None)
+[2025-06-13T17:20:17.297+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 138.4.31.89, 33913, None)
+[2025-06-13T17:20:17.299+0200] {subprocess.py:93} INFO - 25/06/13 17:20:17 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 138.4.31.89, 33913, None)
+[2025-06-13T17:20:18.384+0200] {subprocess.py:93} INFO - 25/06/13 17:20:18 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2025-06-13T17:20:18.404+0200] {subprocess.py:93} INFO - 25/06/13 17:20:18 INFO SharedState: Warehouse path is 'file:/tmp/airflowtmp5okosl57/spark-warehouse'.
+[2025-06-13T17:20:21.621+0200] {subprocess.py:93} INFO - MLflow Run ID: f9c64fe4d1674cf3bda5a18f2c6c504b, Experiment ID: 0
+[2025-06-13T17:20:21.621+0200] {subprocess.py:93} INFO - MLflow Tracking URI: file:///tmp/airflowtmp5okosl57/mlruns
+[2025-06-13T17:20:22.535+0200] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-06-13T17:20:22.535+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/resources/train_spark_mllib_model.py", line 411, in <module>
+[2025-06-13T17:20:22.535+0200] {subprocess.py:93} INFO -     main(sys.argv[1])
+[2025-06-13T17:20:22.535+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/resources/train_spark_mllib_model.py", line 111, in main
+[2025-06-13T17:20:22.536+0200] {subprocess.py:93} INFO -     features = spark.read.json(input_path, schema=schema)
+[2025-06-13T17:20:22.536+0200] {subprocess.py:93} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-06-13T17:20:22.536+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/.sdkman/candidates/spark/current/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 425, in json
+[2025-06-13T17:20:22.536+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/.sdkman/candidates/spark/current/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+[2025-06-13T17:20:22.536+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/.sdkman/candidates/spark/current/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 185, in deco
+[2025-06-13T17:20:22.558+0200] {subprocess.py:93} INFO - pyspark.errors.exceptions.captured.AnalysisException: [PATH_NOT_FOUND] Path does not exist: file:/home/monica.fernandez/data/simple_flight_delay_features.jsonl.bz2.
+[2025-06-13T17:20:23.055+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO SparkContext: Invoking stop() from shutdown hook
+[2025-06-13T17:20:23.056+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO SparkContext: SparkContext is stopping with exitCode 0.
+[2025-06-13T17:20:23.068+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO SparkUI: Stopped Spark web UI at http://138.4.31.89:4041
+[2025-06-13T17:20:23.086+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2025-06-13T17:20:23.109+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO MemoryStore: MemoryStore cleared
+[2025-06-13T17:20:23.110+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO BlockManager: BlockManager stopped
+[2025-06-13T17:20:23.123+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2025-06-13T17:20:23.135+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2025-06-13T17:20:23.147+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO SparkContext: Successfully stopped SparkContext
+[2025-06-13T17:20:23.148+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO ShutdownHookManager: Shutdown hook called
+[2025-06-13T17:20:23.148+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-62fb93df-cc98-4f36-a8f4-0136404d308b
+[2025-06-13T17:20:23.153+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-953ecba2-a188-4155-97c1-22da69c7675a
+[2025-06-13T17:20:23.164+0200] {subprocess.py:93} INFO - 25/06/13 17:20:23 INFO ShutdownHookManager: Deleting directory /tmp/spark-953ecba2-a188-4155-97c1-22da69c7675a/pyspark-9d7c842d-e936-492d-b366-697bf002c8df
+[2025-06-13T17:20:23.256+0200] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-06-13T17:20:23.278+0200] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/operators/bash.py", line 196, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-06-13T17:20:23.283+0200] {taskinstance.py:1318} INFO - Marking task as UP_FOR_RETRY. dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, execution_date=20250613T151959, start_date=20250613T152004, end_date=20250613T152023
+[2025-06-13T17:20:23.312+0200] {standard_task_runner.py:100} ERROR - Failed to execute job 55 for task pyspark_train_classifier_model (Bash command failed. The command returned a non-zero exit code 1.; 37113)
+[2025-06-13T17:20:23.330+0200] {local_task_job.py:208} INFO - Task exited with return code 1
+[2025-06-13T17:20:23.351+0200] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
