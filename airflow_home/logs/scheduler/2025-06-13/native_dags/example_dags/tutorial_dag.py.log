@@ -1216,3 +1216,45 @@
 [2025-06-13T19:09:37.061+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:09:37.060+0200] {dag.py:2690} INFO - Sync 1 DAGs
 [2025-06-13T19:09:37.099+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:09:37.098+0200] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
 [2025-06-13T19:09:37.176+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.178 seconds
+[2025-06-13T19:10:22.975+0200] {processor.py:153} INFO - Started process (PID=105431) to work on /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:10:22.976+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-06-13T19:10:22.977+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:10:22.977+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:10:22.997+0200] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:10:23.025+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:10:23.025+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-13T19:10:23.050+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:10:23.050+0200] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-06-13T19:10:23.109+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.137 seconds
+[2025-06-13T19:11:00.101+0200] {processor.py:153} INFO - Started process (PID=105726) to work on /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:11:00.102+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-06-13T19:11:00.103+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:11:00.103+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:11:00.130+0200] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:11:00.165+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:11:00.165+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-13T19:11:00.199+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:11:00.199+0200] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-06-13T19:11:00.267+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.169 seconds
+[2025-06-13T19:11:47.692+0200] {processor.py:153} INFO - Started process (PID=106179) to work on /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:11:47.693+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-06-13T19:11:47.693+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:11:47.693+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:11:47.714+0200] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:11:47.746+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:11:47.746+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-13T19:11:47.773+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:11:47.772+0200] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-06-13T19:11:47.832+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.143 seconds
+[2025-06-13T19:12:24.041+0200] {processor.py:153} INFO - Started process (PID=106430) to work on /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:12:24.043+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-06-13T19:12:24.044+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:12:24.043+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:12:24.076+0200] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:12:24.126+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:12:24.125+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-13T19:12:24.162+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:12:24.162+0200] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-06-13T19:12:24.228+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.192 seconds
+[2025-06-13T19:13:03.883+0200] {processor.py:153} INFO - Started process (PID=106756) to work on /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:13:03.884+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-06-13T19:13:03.884+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:13:03.884+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:13:03.911+0200] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:13:03.954+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:13:03.953+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-13T19:13:03.988+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:13:03.987+0200] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-06-13T19:13:04.062+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.183 seconds
+[2025-06-13T19:13:49.432+0200] {processor.py:153} INFO - Started process (PID=107195) to work on /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:13:49.433+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py for tasks to queue
+[2025-06-13T19:13:49.434+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:13:49.434+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:13:49.461+0200] {processor.py:753} INFO - DAG(s) dict_keys(['tutorial_dag']) retrieved from /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py
+[2025-06-13T19:13:49.504+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:13:49.504+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-13T19:13:49.544+0200] {logging_mixin.py:137} INFO - [2025-06-13T19:13:49.544+0200] {dag.py:3437} INFO - Setting next_dagrun for tutorial_dag to None, run_after=None
+[2025-06-13T19:13:49.615+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/tutorial_dag.py took 0.187 seconds
