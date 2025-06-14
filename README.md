@@ -10,41 +10,26 @@ Este proyecto implementa una arquitectura completa para predecir retrasos de vue
 La arquitectura está dockerizada. Incluye:
 
 - **Flask**: aplicación web donde el usuario introduce los datos del vuelo.
+  ![Flask](img/predictions.png)
 - **Kafka**: sistema de mensajería para enviar/recibir peticiones y respuestas.
-- **Spark**: motor de procesamiento que recibe las peticiones, predice y guarda resultados.
+- **Spark**: motor de procesamiento que recibe las peticiones, predice y guarda resultados. Interfaz del Spark Master mostrando tareas y ejecución:
+  ![Spark](img/spark.png)
 - **MongoDB**: almacena las predicciones en base de datos.
 - **HDFS**: también almacena las predicciones como archivos parquet.
+Contenido del directorio `/user/spark/prediction` donde Spark almacena los `.parquet`.
+  ![HDFS](img/hdfs.png)
 - **NiFi**: lee las predicciones desde Kafka y las guarda cada 10 segundos en un `.txt`.
+  ![NiFi](img/nifi.png)
 - **Docker Compose**: despliega toda la arquitectura.
 
 Hemos desplegado por local atraves de la terminal:
 - **MLflow**: guarda los experimentos de entrenamiento.
 - **Airflow**: automatiza el entrenamiento del modelo con MLflow.
+  ![Airflow](img/airflow.png)
 
 ---
-## Capturas del sistema
 
-A continuación se muestran algunas capturas representativas del sistema en ejecución.
 
-**Flask – Aplicación web**
-Formulario para introducir los datos del vuelo.
-![Flask](img/predictions.png)
-
-**Spark – Interfaz Web UI**
-Interfaz del Spark Master mostrando tareas y ejecución.
-![Spark](img/spark.png)
-
-**HDFS – Visualización de datos**
-Contenido del directorio `/user/spark/prediction` donde Spark almacena los `.parquet`.
-![HDFS](img/hdfs.png)
-
-**NiFi – Flujo de procesamiento**
-Proceso que extrae datos de Kafka y los guarda en un fichero de texto plano.
-![NiFi](img/nifi.png)
-
-**Airflow – DAG de entrenamiento**
-Ejecución del entrenamiento del modelo en Airflow mediante un DAG.
-![Airflow](img/airflow.png)
 
 ## Cómo ejecutar el sistema
 
