@@ -43,10 +43,11 @@ docker-compose up --build
 
 | Servicio     | URL                      |
 |--------------|--------------------------|
-| Flask Web App | http://localhost:5001     |
-| Airflow      | http://localhost:8180     |
+| Flask Web App | http://localhost:5001    |
+| HDFS         |  http://localhost:9870    |
 | NiFi         | https://localhost:8443    |
 | Spark        | http://localhost:8080     |
+| Airflow      | http://localhost:8180     |
 
 ---
 
@@ -66,10 +67,19 @@ docker-compose up --build
 
 ## Entrenamiento del modelo
 
-- El script `train_spark_mllib_model.py` entrena un modelo Random Forest con PySpark.
-- Se ejecuta desde Airflow como una tarea programada.
-- MLflow registra todos los parámetros, métricas y el modelo final.
+El modelo se entrena usando un script en PySpark: train_spark_mllib_model.py. Este script:
+- Carga un conjunto de datos históricos de vuelos.
+- Preprocesa los datos con StringIndexer, Bucketizer, VectorAssembler.
+- Entrena un modelo de clasificación RandomForestClassifier.
+- Registra métricas y parámetros con MLflow.
+- Guarda los modelos entrenados en la carpeta /models.
+El entrenamiento se automatiza mediante un DAG de Apache Airflow:
+- Airflow ejecuta el script como una tarea programada.
+- Se integra con MLflow para registrar cada experimento.
+- Los modelos entrenados se reutilizan por Spark para predecir en tiempo real.
 
+Vista del DAG en Airflow:
+Registro de experimentos y métricas en MLflow (ejecutado desde terminal).
 
 ---
 
