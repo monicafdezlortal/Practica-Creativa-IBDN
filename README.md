@@ -10,22 +10,36 @@ Este proyecto implementa una arquitectura completa para predecir retrasos de vue
 La arquitectura está dockerizada. Incluye:
 
 - **Flask**: aplicación web donde el usuario introduce los datos del vuelo.
+  
   ![Flask](img/predictions.png)
+  
 - **Kafka**: sistema de mensajería para enviar/recibir peticiones y respuestas.
+  
    ![Kafka](img/kafka.png)
+  
 - **Spark**: motor de procesamiento que recibe las peticiones, predice y guarda resultados. Interfaz del Spark Master mostrando tareas y ejecución:
+  
   ![Spark](img/spark.png)
+  
 - **MongoDB**: almacena las predicciones en base de datos.
+  
 - **HDFS**: también almacena las predicciones como archivos parquet.
+  
 Contenido del directorio `/user/spark/prediction` donde Spark almacena los `.parquet`.
   ![HDFS](img/hdfs.png)
+
 - **NiFi**: lee las predicciones desde Kafka y las guarda cada 10 segundos en un `.txt`.
+  
   ![NiFi](img/nifi.png)
+  
 - **Docker Compose**: despliega toda la arquitectura.
 
 Hemos desplegado por local atraves de la terminal:
+
 - **MLflow**: guarda los experimentos de entrenamiento.
+  
 - **Airflow**: automatiza el entrenamiento del modelo con MLflow.
+  
   ![Airflow](img/airflow.png)
 
 ---
