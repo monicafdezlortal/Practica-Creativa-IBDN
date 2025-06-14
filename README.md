@@ -36,7 +36,7 @@ docker-compose up --build
 | Servicio     | URL                      |
 |--------------|--------------------------|
 | Flask Web App | http://localhost:5001     |
-| Airflow      | http://localhost:8080     |
+| Airflow      | http://localhost:8180     |
 | NiFi         | https://localhost:8443    |
 | Spark        | http://localhost:8080     |
 
