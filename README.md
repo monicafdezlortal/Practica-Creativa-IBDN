@@ -12,6 +12,7 @@ La arquitectura está dockerizada. Incluye:
 - **Flask**: aplicación web donde el usuario introduce los datos del vuelo.
   ![Flask](img/predictions.png)
 - **Kafka**: sistema de mensajería para enviar/recibir peticiones y respuestas.
+   ![Kafka](img/kafka.png)
 - **Spark**: motor de procesamiento que recibe las peticiones, predice y guarda resultados. Interfaz del Spark Master mostrando tareas y ejecución:
   ![Spark](img/spark.png)
 - **MongoDB**: almacena las predicciones en base de datos.
