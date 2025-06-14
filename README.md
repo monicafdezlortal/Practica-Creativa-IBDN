@@ -22,6 +22,29 @@ Hemos desplegado por local atraves de la terminal:
 - **Airflow**: automatiza el entrenamiento del modelo con MLflow.
 
 ---
+## Capturas del sistema
+
+A continuación se muestran algunas capturas representativas del sistema en ejecución.
+
+**Flask – Aplicación web**
+Formulario para introducir los datos del vuelo.
+![Flask](img/predictions.png)
+
+**Spark – Interfaz Web UI**
+Interfaz del Spark Master mostrando tareas y ejecución.
+![Spark](img/spark.png)
+
+**HDFS – Visualización de datos**
+Contenido del directorio `/user/spark/prediction` donde Spark almacena los `.parquet`.
+![HDFS](img/hdfs.png)
+
+**NiFi – Flujo de procesamiento**
+Proceso que extrae datos de Kafka y los guarda en un fichero de texto plano.
+![NiFi](img/nifi.png)
+
+**Airflow – DAG de entrenamiento**
+Ejecución del entrenamiento del modelo en Airflow mediante un DAG.
+![Airflow](img/airflow.png)
 
 ## Cómo ejecutar el sistema
 
