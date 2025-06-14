@@ -5,6 +5,8 @@ from os import environ
 import mlflow
 import mlflow.spark  # Específico para guardar modelos Spark MLlib
 
+mlflow.set_tracking_uri("file:///home/monica.fernandez/practica_creativa/mlruns") 
+
 def main(base_path):
     base_path = base_path if base_path else "."
     APP_NAME = "train_spark_mllib_model.py"
