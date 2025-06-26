@@ -1,0 +1,126 @@
+2025-06-17 13:17:45,699 INFO - Starting the scheduler
+2025-06-17 13:17:45,700 INFO - Processing each file at most -1 times
+2025-06-17 13:17:45,705 INFO - Loaded executor: SequentialExecutor
+2025-06-17 13:17:45,711 INFO - Launched DagFileProcessorManager with pid: 90086
+2025-06-17 13:17:45,712 INFO - Resetting orphaned tasks for active dag runs
+2025-06-17 13:17:45,718 INFO - Configured default timezone Timezone('UTC')
+2025-06-17 13:18:50,892 INFO - 1 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:13:53+00:00 [scheduled]>
+2025-06-17 13:18:50,893 INFO - DAG agile_data_science_batch_prediction_model_training has 0/16 running and queued tasks
+2025-06-17 13:18:50,893 INFO - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:13:53+00:00 [scheduled]>
+2025-06-17 13:18:50,901 INFO - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-16T17:13:53+00:00', try_number=2, map_index=-1) to executor with priority 1 and queue default
+2025-06-17 13:18:50,901 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:13:53+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:18:50,907 INFO - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:13:53+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:20:07,193 ERROR - Failed to execute task Command '['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:13:53+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']' returned non-zero exit status 1..
+2025-06-17 13:20:07,194 INFO - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-16T17:13:53+00:00 exited with status failed for try_number 2
+2025-06-17 13:20:07,214 INFO - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-16T17:13:53+00:00, map_index=-1, run_start_date=2025-06-17 11:19:59.958618+00:00, run_end_date=2025-06-17 11:20:05.394360+00:00, run_duration=5.435742, state=up_for_retry, executor_state=failed, try_number=2, max_tries=3, job_id=32, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:19:54.574082+00:00, queued_by_job_id=31, pid=91354
+2025-06-17 13:20:07,226 ERROR - DagFileProcessorManager (PID=90086) last sent a heartbeat 76.48 seconds ago! Restarting it
+2025-06-17 13:20:07,268 INFO - Sending 15 to group 90086. PIDs of all processes in the group: [90086]
+2025-06-17 13:20:07,269 INFO - Sending the signal 15 to group 90086
+2025-06-17 13:20:07,690 INFO - Process psutil.Process(pid=90086, status='terminated', exitcode=0, started='13:17:45') (90086) terminated with exit code 0
+2025-06-17 13:20:07,705 INFO - Launched DagFileProcessorManager with pid: 91514
+2025-06-17 13:20:07,729 INFO - Configured default timezone Timezone('UTC')
+2025-06-17 13:20:17,068 ERROR - Marking run <DagRun agile_data_science_batch_prediction_model_training @ 2025-06-16 17:13:53+00:00: manual__2025-06-16T17:13:53+00:00, state:running, queued_at: 2025-06-16 17:13:53.386256+00:00. externally triggered: True> failed
+2025-06-17 13:20:17,071 INFO - DagRun Finished: dag_id=agile_data_science_batch_prediction_model_training, execution_date=2025-06-16 17:13:53+00:00, run_id=manual__2025-06-16T17:13:53+00:00, run_start_date=2025-06-17 11:11:26.251671+00:00, run_end_date=2025-06-17 11:20:17.071255+00:00, run_duration=530.819584, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-06-16 17:13:53+00:00, data_interval_end=2025-06-16 17:13:53+00:00, dag_hash=a8529028d99e9cec365e0fc826ff37fa
+2025-06-17 13:20:17,117 INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+2025-06-17 13:20:55,644 INFO - 1 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:14:20.348382+00:00 [scheduled]>
+2025-06-17 13:20:55,646 INFO - DAG agile_data_science_batch_prediction_model_training has 0/16 running and queued tasks
+2025-06-17 13:20:55,647 INFO - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:14:20.348382+00:00 [scheduled]>
+2025-06-17 13:20:55,654 INFO - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-16T17:14:20.348382+00:00', try_number=2, map_index=-1) to executor with priority 1 and queue default
+2025-06-17 13:20:55,654 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:14:20.348382+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:20:55,659 INFO - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:14:20.348382+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:23:54,899 INFO - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-16T17:14:20.348382+00:00 exited with status success for try_number 2
+2025-06-17 13:23:54,917 INFO - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-16T17:14:20.348382+00:00, map_index=-1, run_start_date=2025-06-17 11:20:59.279726+00:00, run_end_date=2025-06-17 11:23:54.309902+00:00, run_duration=175.030176, state=up_for_retry, executor_state=success, try_number=2, max_tries=3, job_id=33, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:20:55.647733+00:00, queued_by_job_id=29, pid=91983
+2025-06-17 13:23:54,928 ERROR - DagFileProcessorManager (PID=91514) last sent a heartbeat 179.46 seconds ago! Restarting it
+2025-06-17 13:23:54,971 INFO - Sending 15 to group 91514. PIDs of all processes in the group: [91514]
+2025-06-17 13:23:54,971 INFO - Sending the signal 15 to group 91514
+2025-06-17 13:23:55,838 INFO - Process psutil.Process(pid=91514, status='terminated', exitcode=0, started='13:20:07') (91514) terminated with exit code 0
+2025-06-17 13:23:55,842 INFO - Launched DagFileProcessorManager with pid: 94369
+2025-06-17 13:23:55,875 INFO - Configured default timezone Timezone('UTC')
+2025-06-17 13:23:56,177 INFO - Resetting orphaned tasks for active dag runs
+2025-06-17 13:23:56,197 INFO - Marked 2 SchedulerJob instances as failed
+2025-06-17 13:23:56,218 INFO - Reset the following 1 orphaned TaskInstances:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [running]>
+2025-06-17 13:23:56,808 INFO - 2 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [scheduled]>
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [scheduled]>
+2025-06-17 13:23:56,808 INFO - DAG agile_data_science_batch_prediction_model_training has 0/16 running and queued tasks
+2025-06-17 13:23:56,809 INFO - DAG agile_data_science_batch_prediction_model_training has 1/16 running and queued tasks
+2025-06-17 13:23:56,809 INFO - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [scheduled]>
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [scheduled]>
+2025-06-17 13:23:56,816 INFO - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-17T11:15:25.088137+00:00', try_number=2, map_index=-1) to executor with priority 1 and queue default
+2025-06-17 13:23:56,817 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:15:25.088137+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:23:56,817 INFO - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-17T11:21:00.851217+00:00', try_number=2, map_index=-1) to executor with priority 1 and queue default
+2025-06-17 13:23:56,817 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:21:00.851217+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:23:56,834 INFO - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:15:25.088137+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:25:05,121 INFO - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:21:00.851217+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:25:09,841 INFO - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-17T11:15:25.088137+00:00 exited with status success for try_number 2
+2025-06-17 13:25:09,841 INFO - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-17T11:21:00.851217+00:00 exited with status success for try_number 2
+2025-06-17 13:25:09,859 INFO - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-17T11:15:25.088137+00:00, map_index=-1, run_start_date=2025-06-17 11:24:02.752077+00:00, run_end_date=2025-06-17 11:25:03.905496+00:00, run_duration=61.153419, state=up_for_retry, executor_state=success, try_number=2, max_tries=3, job_id=35, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:24:56.175466+00:00, queued_by_job_id=31, pid=94423
+2025-06-17 13:25:09,860 INFO - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-17T11:21:00.851217+00:00, map_index=-1, run_start_date=2025-06-17 11:21:06.888234+00:00, run_end_date=2025-06-17 11:23:58.730514+00:00, run_duration=171.84228, state=up_for_retry, executor_state=success, try_number=2, max_tries=3, job_id=34, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:23:56.809436+00:00, queued_by_job_id=29, pid=92104
+2025-06-17 13:25:09,871 ERROR - DagFileProcessorManager (PID=94369) last sent a heartbeat 73.28 seconds ago! Restarting it
+2025-06-17 13:25:09,902 INFO - Sending 15 to group 94369. PIDs of all processes in the group: [94369]
+2025-06-17 13:25:09,902 INFO - Sending the signal 15 to group 94369
+2025-06-17 13:25:10,521 INFO - Process psutil.Process(pid=94369, status='terminated', exitcode=0, started='13:23:55') (94369) terminated with exit code 0
+2025-06-17 13:25:10,526 INFO - Launched DagFileProcessorManager with pid: 95331
+2025-06-17 13:25:10,559 INFO - Configured default timezone Timezone('UTC')
+2025-06-17 13:28:56,447 INFO - Resetting orphaned tasks for active dag runs
+2025-06-17 13:28:59,363 INFO - 1 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [scheduled]>
+2025-06-17 13:28:59,364 INFO - DAG agile_data_science_batch_prediction_model_training has 1/16 running and queued tasks
+2025-06-17 13:28:59,364 INFO - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [scheduled]>
+2025-06-17 13:28:59,370 INFO - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-17T11:21:00.851217+00:00', try_number=3, map_index=-1) to executor with priority 1 and queue default
+2025-06-17 13:28:59,370 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:21:00.851217+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:28:59,379 INFO - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:21:00.851217+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:31:49,311 INFO - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-17T11:21:00.851217+00:00 exited with status success for try_number 3
+2025-06-17 13:31:49,332 INFO - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-17T11:21:00.851217+00:00, map_index=-1, run_start_date=2025-06-17 11:29:03.692885+00:00, run_end_date=2025-06-17 11:31:48.764385+00:00, run_duration=165.0715, state=failed, executor_state=success, try_number=3, max_tries=3, job_id=39, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:28:59.364464+00:00, queued_by_job_id=None, pid=97454
+2025-06-17 13:31:49,343 ERROR - DagFileProcessorManager (PID=95331) last sent a heartbeat 170.15 seconds ago! Restarting it
+2025-06-17 13:31:49,356 INFO - Sending 15 to group 95331. PIDs of all processes in the group: [95331]
+2025-06-17 13:31:49,357 INFO - Sending the signal 15 to group 95331
+2025-06-17 13:31:49,610 INFO - Process psutil.Process(pid=95331, status='terminated', exitcode=0, started='13:25:10') (95331) terminated with exit code 0
+2025-06-17 13:31:49,614 INFO - Launched DagFileProcessorManager with pid: 99845
+2025-06-17 13:31:49,657 INFO - Configured default timezone Timezone('UTC')
+2025-06-17 13:33:56,613 INFO - Resetting orphaned tasks for active dag runs
+2025-06-17 13:33:56,647 INFO - Reset the following 1 orphaned TaskInstances:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [running]>
+2025-06-17 13:33:58,281 INFO - 1 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [scheduled]>
+2025-06-17 13:33:58,281 INFO - DAG agile_data_science_batch_prediction_model_training has 0/16 running and queued tasks
+2025-06-17 13:33:58,281 INFO - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [scheduled]>
+2025-06-17 13:33:58,288 INFO - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-17T11:15:25.088137+00:00', try_number=5, map_index=-1) to executor with priority 1 and queue default
+2025-06-17 13:33:58,288 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:15:25.088137+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:33:58,300 INFO - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:15:25.088137+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:34:09,916 INFO - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-17T11:15:25.088137+00:00 exited with status success for try_number 5
+2025-06-17 13:34:09,933 INFO - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-17T11:15:25.088137+00:00, map_index=-1, run_start_date=2025-06-17 11:31:54.287971+00:00, run_end_date=2025-06-17 11:34:06.527759+00:00, run_duration=132.239788, state=failed, executor_state=success, try_number=5, max_tries=3, job_id=40, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:33:58.282388+00:00, queued_by_job_id=29, pid=99869
+2025-06-17 13:36:47,004 INFO - 1 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:14:20.348382+00:00 [scheduled]>
+2025-06-17 13:36:47,004 INFO - DAG agile_data_science_batch_prediction_model_training has 0/16 running and queued tasks
+2025-06-17 13:36:47,004 INFO - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:14:20.348382+00:00 [scheduled]>
+2025-06-17 13:36:47,010 INFO - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-16T17:14:20.348382+00:00', try_number=4, map_index=-1) to executor with priority 1 and queue default
+2025-06-17 13:36:47,010 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:14:20.348382+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:36:47,015 INFO - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:14:20.348382+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']
+2025-06-17 13:39:10,612 INFO - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-16T17:14:20.348382+00:00 exited with status success for try_number 4
+2025-06-17 13:39:10,627 INFO - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-16T17:14:20.348382+00:00, map_index=-1, run_start_date=2025-06-17 11:36:51.325499+00:00, run_end_date=2025-06-17 11:39:10.197372+00:00, run_duration=138.871873, state=failed, executor_state=success, try_number=4, max_tries=3, job_id=42, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:36:47.005287+00:00, queued_by_job_id=29, pid=103221
+2025-06-17 13:39:10,638 ERROR - DagFileProcessorManager (PID=99845) last sent a heartbeat 143.73 seconds ago! Restarting it
+2025-06-17 13:39:10,651 INFO - Sending 15 to group 99845. PIDs of all processes in the group: [99845]
+2025-06-17 13:39:10,651 INFO - Sending the signal 15 to group 99845
+2025-06-17 13:39:11,307 INFO - Process psutil.Process(pid=99845, status='terminated', exitcode=0, started='13:31:49') (99845) terminated with exit code 0
+2025-06-17 13:39:11,322 INFO - Launched DagFileProcessorManager with pid: 105213
+2025-06-17 13:39:11,335 INFO - Configured default timezone Timezone('UTC')
+2025-06-17 13:39:11,475 INFO - Resetting orphaned tasks for active dag runs
+2025-06-17 13:39:11,489 INFO - Marked 1 SchedulerJob instances as failed
+2025-06-17 13:39:29,406 INFO - Exiting gracefully upon receiving signal 15
+2025-06-17 13:39:29,894 INFO - Sending 15 to group 105213. PIDs of all processes in the group: []
+2025-06-17 13:39:29,895 INFO - Sending the signal 15 to group 105213
+2025-06-17 13:39:29,896 INFO - Sending the signal 15 to process 105213 as process group is missing.
+2025-06-17 13:39:29,924 INFO - Sending 15 to group 105213. PIDs of all processes in the group: []
+2025-06-17 13:39:29,924 INFO - Sending the signal 15 to group 105213
+2025-06-17 13:39:29,924 INFO - Sending the signal 15 to process 105213 as process group is missing.
+2025-06-17 13:39:29,925 INFO - Exited execute loop

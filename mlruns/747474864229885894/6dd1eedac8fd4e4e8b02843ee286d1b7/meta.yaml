@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/6dd1eedac8fd4e4e8b02843ee286d1b7/artifacts
+end_time: 1750181634010
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 6dd1eedac8fd4e4e8b02843ee286d1b7
+run_name: aged-wren-432
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750181403188
+status: 3
+tags: []
+user_id: monica.fernandez

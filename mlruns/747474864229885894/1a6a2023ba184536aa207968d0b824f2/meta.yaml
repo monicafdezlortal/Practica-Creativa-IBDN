@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/1a6a2023ba184536aa207968d0b824f2/artifacts
+end_time: 1750160810934
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 1a6a2023ba184536aa207968d0b824f2
+run_name: lyrical-yak-63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750160702954
+status: 4
+tags: []
+user_id: monica.fernandez

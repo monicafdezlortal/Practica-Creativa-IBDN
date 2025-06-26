@@ -1,0 +1,441 @@
+[2025-06-17T13:11:25.590+0200] {processor.py:153} INFO - Started process (PID=84205) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:11:25.591+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:11:25.591+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:11:25.591+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:11:25.717+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:11:25.825+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:11:25.824+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:11:25.914+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:11:25.914+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:11:25.991+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.406 seconds
+[2025-06-17T13:15:56.371+0200] {processor.py:153} INFO - Started process (PID=88859) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:15:56.372+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:15:56.372+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:15:56.372+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:15:56.388+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:15:56.428+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:15:56.428+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:15:56.448+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:15:56.448+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:15:56.498+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.129 seconds
+[2025-06-17T13:17:45.893+0200] {processor.py:153} INFO - Started process (PID=90088) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:17:45.894+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:17:45.895+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:17:45.894+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:17:45.931+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:17:45.968+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:17:45.968+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:17:45.998+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:17:45.998+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:17:46.049+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.158 seconds
+[2025-06-17T13:18:36.858+0200] {processor.py:153} INFO - Started process (PID=90427) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:18:36.859+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:18:36.859+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:18:36.859+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:18:36.894+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:18:36.935+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:18:36.935+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:18:36.974+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:18:36.973+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:18:37.031+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.184 seconds
+[2025-06-17T13:19:54.004+0200] {processor.py:153} INFO - Started process (PID=91314) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:19:54.005+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:19:54.005+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:19:54.005+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:19:54.046+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:19:54.094+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:19:54.094+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:19:54.153+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:19:54.152+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:19:54.223+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.222 seconds
+[2025-06-17T13:20:08.379+0200] {processor.py:153} INFO - Started process (PID=91524) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:20:08.381+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:20:08.382+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:20:08.382+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:20:08.394+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:20:08.466+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:20:08.466+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:20:08.555+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:20:08.554+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:20:08.690+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.327 seconds
+[2025-06-17T13:23:56.295+0200] {processor.py:153} INFO - Started process (PID=94371) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:23:56.295+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:23:56.296+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:23:56.296+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:23:56.351+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:23:56.429+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:23:56.429+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:23:56.457+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:23:56.457+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:23:56.535+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.243 seconds
+[2025-06-17T13:24:00.014+0200] {processor.py:153} INFO - Started process (PID=94414) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:24:00.015+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:24:00.015+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:24:00.015+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:24:00.032+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:24:00.241+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:24:00.241+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:24:00.274+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:24:00.274+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:24:00.351+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.340 seconds
+[2025-06-17T13:25:10.898+0200] {processor.py:153} INFO - Started process (PID=95332) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:25:10.899+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:25:10.901+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:25:10.901+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:25:10.923+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:25:11.020+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:25:11.020+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:25:11.068+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:25:11.060+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:25:11.198+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.306 seconds
+[2025-06-17T13:25:15.563+0200] {processor.py:153} INFO - Started process (PID=95412) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:25:15.566+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:25:15.571+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:25:15.571+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:25:15.614+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:25:15.709+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:25:15.709+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:25:15.750+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:25:15.749+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:25:15.827+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.278 seconds
+[2025-06-17T13:25:50.168+0200] {processor.py:153} INFO - Started process (PID=95679) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:25:50.168+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:25:50.169+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:25:50.169+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:25:50.178+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:25:50.213+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:25:50.213+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:25:50.239+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:25:50.239+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:25:50.301+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.136 seconds
+[2025-06-17T13:26:03.864+0200] {processor.py:153} INFO - Started process (PID=95765) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:26:03.865+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:26:03.866+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:26:03.866+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:26:03.877+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:26:03.909+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:26:03.909+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:26:03.936+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:26:03.936+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:26:04.003+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.141 seconds
+[2025-06-17T13:26:31.955+0200] {processor.py:153} INFO - Started process (PID=96062) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:26:31.955+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:26:31.956+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:26:31.956+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:26:31.974+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:26:32.029+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:26:32.028+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:26:32.068+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:26:32.068+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:26:32.170+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.218 seconds
+[2025-06-17T13:26:44.120+0200] {processor.py:153} INFO - Started process (PID=96223) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:26:44.121+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:26:44.122+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:26:44.122+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:26:44.133+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:26:44.179+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:26:44.179+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:26:44.215+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:26:44.215+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:26:44.304+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.186 seconds
+[2025-06-17T13:27:14.486+0200] {processor.py:153} INFO - Started process (PID=96520) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:27:14.487+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:27:14.488+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:27:14.488+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:27:14.500+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:27:14.537+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:27:14.537+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:27:14.561+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:27:14.560+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:27:14.628+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.144 seconds
+[2025-06-17T13:27:28.010+0200] {processor.py:153} INFO - Started process (PID=96583) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:27:28.011+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:27:28.012+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:27:28.012+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:27:28.036+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:27:28.115+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:27:28.115+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:27:28.148+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:27:28.148+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:27:28.247+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.241 seconds
+[2025-06-17T13:28:04.421+0200] {processor.py:153} INFO - Started process (PID=96871) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:28:04.422+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:28:04.422+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:28:04.422+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:28:04.445+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:28:04.501+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:28:04.501+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:28:04.526+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:28:04.525+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:28:04.611+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.193 seconds
+[2025-06-17T13:28:17.617+0200] {processor.py:153} INFO - Started process (PID=97075) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:28:17.618+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:28:17.618+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:28:17.618+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:28:17.637+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:28:17.676+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:28:17.676+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:28:17.705+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:28:17.705+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:28:17.789+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.175 seconds
+[2025-06-17T13:28:51.863+0200] {processor.py:153} INFO - Started process (PID=97353) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:28:51.864+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:28:51.864+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:28:51.864+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:28:51.874+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:28:51.908+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:28:51.908+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:28:51.936+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:28:51.936+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:28:52.004+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.143 seconds
+[2025-06-17T13:31:48.495+0200] {processor.py:153} INFO - Started process (PID=99819) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:31:48.497+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:31:48.499+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:31:48.499+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:31:48.543+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:31:48.643+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:31:48.642+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:31:48.732+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:31:48.732+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:31:48.818+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.330 seconds
+[2025-06-17T13:31:49.987+0200] {processor.py:153} INFO - Started process (PID=99846) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:31:49.988+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:31:49.989+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:31:49.988+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:31:50.043+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:31:50.089+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:31:50.089+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:31:50.120+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:31:50.120+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:31:50.191+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.209 seconds
+[2025-06-17T13:32:44.160+0200] {processor.py:153} INFO - Started process (PID=100553) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:32:44.161+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:32:44.176+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:32:44.176+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:32:44.201+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:32:44.270+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:32:44.270+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:32:44.309+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:32:44.309+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:32:44.358+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.204 seconds
+[2025-06-17T13:33:36.756+0200] {processor.py:153} INFO - Started process (PID=101122) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:33:36.758+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:33:36.758+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:33:36.758+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:33:36.790+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:33:36.923+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:33:36.923+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:33:36.965+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:33:36.965+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:33:37.034+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.281 seconds
+[2025-06-17T13:34:08.973+0200] {processor.py:153} INFO - Started process (PID=101574) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:08.973+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:34:08.975+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:08.974+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:09.001+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:09.086+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:09.086+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:34:09.115+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:09.114+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:34:09.210+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.243 seconds
+[2025-06-17T13:34:13.126+0200] {processor.py:153} INFO - Started process (PID=101642) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:13.127+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:34:13.128+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:13.128+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:13.141+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:13.194+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:13.194+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:34:13.247+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:13.247+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:34:13.347+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.226 seconds
+[2025-06-17T13:34:44.853+0200] {processor.py:153} INFO - Started process (PID=101966) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:44.854+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:34:44.855+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:44.855+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:44.865+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:44.904+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:44.904+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:34:44.928+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:44.928+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:34:45.011+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.161 seconds
+[2025-06-17T13:34:58.195+0200] {processor.py:153} INFO - Started process (PID=102033) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:58.199+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:34:58.199+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:58.199+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:58.224+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:34:58.291+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:58.290+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:34:58.323+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:34:58.323+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:34:58.468+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.276 seconds
+[2025-06-17T13:35:19.951+0200] {processor.py:153} INFO - Started process (PID=102293) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:35:19.952+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:35:19.952+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:35:19.952+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:35:19.965+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:35:20.017+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:35:20.017+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:35:20.043+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:35:20.043+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:35:20.140+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.192 seconds
+[2025-06-17T13:35:37.502+0200] {processor.py:153} INFO - Started process (PID=102414) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:35:37.504+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:35:37.505+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:35:37.505+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:35:37.520+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:35:37.575+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:35:37.575+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:35:37.625+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:35:37.625+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:35:37.835+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.337 seconds
+[2025-06-17T13:35:59.292+0200] {processor.py:153} INFO - Started process (PID=102646) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:35:59.293+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:35:59.294+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:35:59.294+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:35:59.305+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:35:59.337+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:35:59.337+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:35:59.362+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:35:59.362+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:35:59.418+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.129 seconds
+[2025-06-17T13:36:28.301+0200] {processor.py:153} INFO - Started process (PID=102964) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:36:28.302+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:36:28.303+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:36:28.303+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:36:28.312+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:36:28.346+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:36:28.346+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:36:28.370+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:36:28.370+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:36:28.433+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.135 seconds
+[2025-06-17T13:37:18.150+0200] {processor.py:153} INFO - Started process (PID=103647) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:37:18.151+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:37:18.152+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:37:18.152+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:37:18.164+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:37:18.201+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:37:18.201+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:37:18.231+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:37:18.231+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:37:18.313+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.166 seconds
+[2025-06-17T13:38:00.409+0200] {processor.py:153} INFO - Started process (PID=104082) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:38:00.409+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:38:00.410+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:38:00.410+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:38:00.425+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:38:00.469+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:38:00.469+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:38:00.509+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:38:00.509+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:38:00.587+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.181 seconds
+[2025-06-17T13:38:42.287+0200] {processor.py:153} INFO - Started process (PID=104619) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:38:42.288+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:38:42.289+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:38:42.289+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:38:42.307+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:38:42.356+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:38:42.355+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:38:42.399+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:38:42.399+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:38:42.477+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.199 seconds
+[2025-06-17T13:39:11.547+0200] {processor.py:153} INFO - Started process (PID=105217) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:39:11.548+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:39:11.548+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:39:11.548+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:39:11.559+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:39:11.592+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:39:11.592+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:39:11.615+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:39:11.615+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:39:11.670+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.126 seconds
+[2025-06-17T13:39:23.683+0200] {processor.py:153} INFO - Started process (PID=105366) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:39:23.684+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:39:23.684+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:39:23.684+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:39:23.700+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:39:23.746+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:39:23.745+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:39:23.778+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:39:23.778+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:39:23.845+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.167 seconds
+[2025-06-17T13:39:51.154+0200] {processor.py:153} INFO - Started process (PID=105602) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:39:51.155+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:39:51.155+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:39:51.155+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:39:51.180+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:39:51.213+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:39:51.213+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:39:51.261+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:39:51.261+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:39:51.339+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.188 seconds
+[2025-06-17T13:42:31.612+0200] {processor.py:153} INFO - Started process (PID=107515) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:42:31.613+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:42:31.613+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:42:31.613+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:42:31.627+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:42:31.667+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:42:31.667+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:42:31.689+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:42:31.689+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:42:31.739+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.130 seconds
+[2025-06-17T13:43:22.194+0200] {processor.py:153} INFO - Started process (PID=108010) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:43:22.195+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:43:22.197+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:43:22.196+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:43:22.208+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:43:22.258+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:43:22.258+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:43:22.285+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:43:22.285+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:43:22.364+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.173 seconds
+[2025-06-17T13:44:01.307+0200] {processor.py:153} INFO - Started process (PID=108310) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:44:01.308+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:44:01.309+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:44:01.308+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:44:01.323+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:44:01.363+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:44:01.362+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:44:01.387+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:44:01.387+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:44:01.446+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.144 seconds
+[2025-06-17T13:44:39.196+0200] {processor.py:153} INFO - Started process (PID=108647) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:44:39.197+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:44:39.198+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:44:39.198+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:44:39.208+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:44:39.246+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:44:39.246+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:44:39.271+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:44:39.271+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:44:39.326+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.133 seconds
+[2025-06-17T13:45:17.910+0200] {processor.py:153} INFO - Started process (PID=109230) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:45:17.911+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:45:17.912+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:45:17.912+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:45:17.929+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:45:17.990+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:45:17.989+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:45:18.045+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:45:18.045+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:45:18.108+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.204 seconds
+[2025-06-17T13:45:58.070+0200] {processor.py:153} INFO - Started process (PID=109681) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:45:58.071+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:45:58.071+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:45:58.071+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:45:58.082+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:45:58.125+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:45:58.125+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:45:58.152+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:45:58.152+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:45:58.222+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.155 seconds
+[2025-06-17T13:46:34.990+0200] {processor.py:153} INFO - Started process (PID=110154) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:46:34.991+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:46:34.991+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:46:34.991+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:46:35.010+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:46:35.058+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:46:35.058+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:46:35.082+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:46:35.082+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:46:35.210+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.224 seconds
+[2025-06-17T13:47:15.470+0200] {processor.py:153} INFO - Started process (PID=110762) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:47:15.472+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:47:15.473+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:47:15.472+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:47:15.494+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:47:15.565+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:47:15.565+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:47:15.589+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:47:15.589+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:47:15.655+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.189 seconds
+[2025-06-17T13:49:39.405+0200] {processor.py:153} INFO - Started process (PID=113027) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:49:39.406+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:49:39.407+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:49:39.406+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:49:39.427+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:49:39.463+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:49:39.463+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:49:39.485+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:49:39.484+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:49:39.535+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.137 seconds
+[2025-06-17T13:50:28.148+0200] {processor.py:153} INFO - Started process (PID=113496) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:50:28.149+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:50:28.149+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:50:28.149+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:50:28.178+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:50:28.248+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:50:28.248+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:50:28.273+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:50:28.273+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:50:28.335+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.190 seconds
+[2025-06-17T13:51:02.162+0200] {processor.py:153} INFO - Started process (PID=113769) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:51:02.163+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:51:02.163+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:51:02.163+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:51:02.198+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:51:02.234+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:51:02.234+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:51:02.265+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:51:02.265+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:51:02.316+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.159 seconds
+[2025-06-17T13:55:43.549+0200] {processor.py:153} INFO - Started process (PID=117711) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:55:43.550+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:55:43.550+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:55:43.550+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:55:43.570+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:55:43.615+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:55:43.615+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:55:43.638+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:55:43.638+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:55:43.691+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.145 seconds
+[2025-06-17T13:59:51.427+0200] {processor.py:153} INFO - Started process (PID=121056) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:59:51.428+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T13:59:51.428+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:59:51.428+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:59:51.447+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T13:59:51.500+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:59:51.500+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T13:59:51.552+0200] {logging_mixin.py:137} INFO - [2025-06-17T13:59:51.552+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T13:59:51.622+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.198 seconds
+[2025-06-17T19:24:16.362+0200] {processor.py:153} INFO - Started process (PID=159137) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:24:16.363+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:24:16.363+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:24:16.363+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:24:16.428+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:24:16.502+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:24:16.502+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:24:16.569+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:24:16.568+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:24:16.648+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.290 seconds
+[2025-06-17T19:25:05.983+0200] {processor.py:153} INFO - Started process (PID=159579) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:25:05.985+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:25:05.986+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:25:05.986+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:25:06.029+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:25:06.088+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:25:06.088+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:25:06.132+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:25:06.132+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:25:06.198+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.221 seconds
+[2025-06-17T19:25:41.893+0200] {processor.py:153} INFO - Started process (PID=159861) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:25:41.894+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:25:41.895+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:25:41.895+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:25:41.934+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:25:41.993+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:25:41.993+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:25:42.028+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:25:42.028+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:25:42.093+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.205 seconds
+[2025-06-17T19:26:19.871+0200] {processor.py:153} INFO - Started process (PID=160263) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:26:19.872+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:26:19.873+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:26:19.873+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:26:19.913+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:26:19.975+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:26:19.975+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:26:20.011+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:26:20.011+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:26:20.086+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.221 seconds
+[2025-06-17T19:26:59.265+0200] {processor.py:153} INFO - Started process (PID=160782) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:26:59.266+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:26:59.267+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:26:59.267+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:26:59.314+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:26:59.354+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:26:59.353+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:26:59.381+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:26:59.381+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:26:59.451+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.193 seconds
+[2025-06-17T19:27:36.811+0200] {processor.py:153} INFO - Started process (PID=161090) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:27:36.812+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:27:36.813+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:27:36.813+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:27:36.852+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:27:36.903+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:27:36.903+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:27:36.944+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:27:36.944+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:27:37.028+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.222 seconds
+[2025-06-17T19:28:20.120+0200] {processor.py:153} INFO - Started process (PID=161503) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:28:20.122+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:28:20.123+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:28:20.122+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:28:20.155+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:28:20.189+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:28:20.189+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:28:20.217+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:28:20.217+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:28:20.279+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.164 seconds
+[2025-06-17T19:28:55.308+0200] {processor.py:153} INFO - Started process (PID=161750) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:28:55.309+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:28:55.310+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:28:55.310+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:28:55.354+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:28:55.392+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:28:55.391+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:28:55.418+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:28:55.418+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:28:55.475+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.173 seconds
+[2025-06-17T19:29:35.109+0200] {processor.py:153} INFO - Started process (PID=162181) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:29:35.110+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:29:35.113+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:29:35.111+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:29:35.181+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:29:35.253+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:29:35.253+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:29:35.306+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:29:35.306+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:29:35.426+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.319 seconds
+[2025-06-17T19:33:56.564+0200] {processor.py:153} INFO - Started process (PID=165235) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:33:56.565+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:33:56.565+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:33:56.565+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:33:56.579+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:33:56.620+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:33:56.620+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:33:56.645+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:33:56.645+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:33:56.698+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.137 seconds
+[2025-06-17T19:34:47.744+0200] {processor.py:153} INFO - Started process (PID=165562) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:34:47.744+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:34:47.745+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:34:47.745+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:34:47.756+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:34:47.810+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:34:47.810+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:34:47.860+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:34:47.860+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:34:47.960+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.220 seconds
+[2025-06-17T19:35:30.467+0200] {processor.py:153} INFO - Started process (PID=165945) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:35:30.470+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:35:30.471+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:35:30.471+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:35:30.498+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:35:30.564+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:35:30.564+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:35:30.601+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:35:30.601+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:35:30.699+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.235 seconds
+[2025-06-17T19:36:11.724+0200] {processor.py:153} INFO - Started process (PID=166326) to work on /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:36:11.724+0200] {processor.py:743} INFO - Processing file /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py for tasks to queue
+[2025-06-17T19:36:11.725+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:36:11.725+0200] {dagbag.py:538} INFO - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:36:11.734+0200] {processor.py:753} INFO - DAG(s) dict_keys(['agile_data_science_batch_prediction_model_training']) retrieved from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py
+[2025-06-17T19:36:11.765+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:36:11.765+0200] {dag.py:2690} INFO - Sync 1 DAGs
+[2025-06-17T19:36:11.786+0200] {logging_mixin.py:137} INFO - [2025-06-17T19:36:11.786+0200] {dag.py:3437} INFO - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None
+[2025-06-17T19:36:11.842+0200] {processor.py:175} INFO - Processing /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py took 0.121 seconds

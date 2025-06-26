@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/0b4f484a4bdb4df69c8c4633bab4548c/artifacts
+end_time: 1750768996145
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 0b4f484a4bdb4df69c8c4633bab4548c
+run_name: skittish-sheep-157
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750768340118
+status: 3
+tags: []
+user_id: monica.fernandez

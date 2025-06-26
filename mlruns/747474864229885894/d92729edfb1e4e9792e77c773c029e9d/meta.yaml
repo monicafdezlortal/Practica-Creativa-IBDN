@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/d92729edfb1e4e9792e77c773c029e9d/artifacts
+end_time: 1750890100655
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: d92729edfb1e4e9792e77c773c029e9d
+run_name: merciful-mare-713
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750889878072
+status: 3
+tags: []
+user_id: monica.fernandez

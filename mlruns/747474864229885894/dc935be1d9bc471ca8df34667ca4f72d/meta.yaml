@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/dc935be1d9bc471ca8df34667ca4f72d/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: dc935be1d9bc471ca8df34667ca4f72d
+run_name: sedate-whale-870
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750093907745
+status: 1
+tags: []
+user_id: monica.fernandez

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/c55a687a014c418d8bbf286e77525095/artifacts
+end_time: 1750161588351
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: c55a687a014c418d8bbf286e77525095
+run_name: able-snail-308
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750161357340
+status: 3
+tags: []
+user_id: monica.fernandez

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/693b634dac0a481a921239ce5bfb258b/artifacts
+end_time: 1750161340330
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 693b634dac0a481a921239ce5bfb258b
+run_name: flawless-kit-657
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750161107329
+status: 3
+tags: []
+user_id: monica.fernandez

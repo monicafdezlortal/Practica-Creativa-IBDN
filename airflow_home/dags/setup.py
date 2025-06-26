@@ -6,7 +6,7 @@ from airflow.operators.bash import BashOperator
 from datetime import datetime, timedelta
 import iso8601
 
-PROJECT_HOME = os.getenv("PROJECT_HOME")
+PROJECT_HOME = "/home/monica.fernandez/practica_creativa"
 
 
 default_args = {
@@ -23,45 +23,23 @@ training_dag = DAG(
   schedule_interval=None
 )
 
-# We use the same two commands for all our PySpark tasks
+# Bash command templates
 pyspark_bash_command = """
 spark-submit --master {{ params.master }} \
   {{ params.base_path }}/{{ params.filename }} \
   {{ params.base_path }}
 """
-pyspark_date_bash_command = """
-spark-submit --master {{ params.master }} \
-  {{ params.base_path }}/{{ params.filename }} \
-  {{ ts }} {{ params.base_path }}
-"""
 
-
-# Gather the training data for our classifier
-"""
-extract_features_operator = BashOperator(
-  task_id = "pyspark_extract_features",
-  bash_command = pyspark_bash_command,
-  params = {
-    "master": "local[8]",
-    "filename": "resources/extract_features.py",
-    "base_path": "{}/".format(PROJECT_HOME)
-  },
-  dag=training_dag
-)
-
-"""
-
-# Train and persist the classifier model
+# Train the classifier model
 train_classifier_model_operator = BashOperator(
   task_id = "pyspark_train_classifier_model",
   bash_command = pyspark_bash_command,
   params = {
     "master": "local[4]",
     "filename": "resources/train_spark_mllib_model.py",
-    "base_path": "{}/".format(PROJECT_HOME)
+    "base_path": PROJECT_HOME
   },
   dag=training_dag
 )
 
-# The model training depends on the feature extraction
-#train_classifier_model_operator.set_upstream(extract_features_operator)
+dag = training_dag

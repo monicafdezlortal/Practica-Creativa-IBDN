@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/24a5d29d498b401a847c1cb598a8256e/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 24a5d29d498b401a847c1cb598a8256e
+run_name: caring-cub-219
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750092367992
+status: 1
+tags: []
+user_id: monica.fernandez

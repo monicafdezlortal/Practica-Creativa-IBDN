@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/fb5d8f0dbe7d471197404568f0f868ae/artifacts
+end_time: 1750158829174
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: fb5d8f0dbe7d471197404568f0f868ae
+run_name: bedecked-perch-977
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750158719051
+status: 4
+tags: []
+user_id: monica.fernandez

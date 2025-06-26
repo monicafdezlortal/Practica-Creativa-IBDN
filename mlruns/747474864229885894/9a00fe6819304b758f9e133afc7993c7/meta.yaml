@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/9a00fe6819304b758f9e133afc7993c7/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 9a00fe6819304b758f9e133afc7993c7
+run_name: nosy-wren-613
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750159464630
+status: 1
+tags: []
+user_id: monica.fernandez

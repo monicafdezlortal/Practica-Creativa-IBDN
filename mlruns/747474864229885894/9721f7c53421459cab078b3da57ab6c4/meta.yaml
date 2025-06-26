@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/9721f7c53421459cab078b3da57ab6c4/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 9721f7c53421459cab078b3da57ab6c4
+run_name: blushing-bear-834
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750159145839
+status: 1
+tags: []
+user_id: monica.fernandez

@@ -1,0 +1,38 @@
+[2025-06-14T19:10:41.196+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-14T17:05:26.695978+00:00 [queued]>
+[2025-06-14T19:10:41.215+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-14T17:05:26.695978+00:00 [queued]>
+[2025-06-14T19:10:41.215+0200] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-14T19:10:41.215+0200] {taskinstance.py:1280} INFO - Starting attempt 2 of 4
+[2025-06-14T19:10:41.215+0200] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-06-14T19:10:41.235+0200] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): pyspark_train_classifier_model> on 2025-06-14 17:05:26.695978+00:00
+[2025-06-14T19:10:41.238+0200] {standard_task_runner.py:55} INFO - Started process 194671 to run task
+[2025-06-14T19:10:41.241+0200] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-14T17:05:26.695978+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/setup.py', '--cfg-path', '/tmp/tmpw_l68d7o']
+[2025-06-14T19:10:41.243+0200] {standard_task_runner.py:83} INFO - Job 68: Subtask pyspark_train_classifier_model
+[2025-06-14T19:10:41.326+0200] {task_command.py:388} INFO - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-14T17:05:26.695978+00:00 [running]> on host l024.lab.dit.upm.es
+[2025-06-14T19:10:41.408+0200] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=agile_data_science_batch_prediction_model_training
+AIRFLOW_CTX_TASK_ID=pyspark_train_classifier_model
+AIRFLOW_CTX_EXECUTION_DATE=2025-06-14T17:05:26.695978+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-06-14T17:05:26.695978+00:00
+[2025-06-14T19:10:41.410+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-06-14T19:10:41.410+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\nspark-submit --master local[4]   None//resources/train_spark_mllib_model.py   None/']
+[2025-06-14T19:10:41.418+0200] {subprocess.py:86} INFO - Output:
+[2025-06-14T19:10:43.210+0200] {subprocess.py:93} INFO - 25/06/14 19:10:43 WARN Utils: Your hostname, l024 resolves to a loopback address: 127.0.1.1; using 138.4.31.24 instead (on interface enp1s0)
+[2025-06-14T19:10:43.229+0200] {subprocess.py:93} INFO - 25/06/14 19:10:43 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2025-06-14T19:10:43.742+0200] {subprocess.py:93} INFO - python3: can't open file '/tmp/airflowtmpfjag_n2n/None/resources/train_spark_mllib_model.py': [Errno 2] No such file or directory
+[2025-06-14T19:10:43.755+0200] {subprocess.py:93} INFO - 25/06/14 19:10:43 INFO ShutdownHookManager: Shutdown hook called
+[2025-06-14T19:10:43.756+0200] {subprocess.py:93} INFO - 25/06/14 19:10:43 INFO ShutdownHookManager: Deleting directory /tmp/spark-8896740e-57bb-444d-ba32-b94a3497d992
+[2025-06-14T19:10:43.820+0200] {subprocess.py:97} INFO - Command exited with return code 2
+[2025-06-14T19:10:43.839+0200] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/operators/bash.py", line 196, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-06-14T19:10:43.850+0200] {taskinstance.py:1318} INFO - Marking task as UP_FOR_RETRY. dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, execution_date=20250614T170526, start_date=20250614T171041, end_date=20250614T171043
+[2025-06-14T19:10:43.874+0200] {standard_task_runner.py:100} ERROR - Failed to execute job 68 for task pyspark_train_classifier_model (Bash command failed. The command returned a non-zero exit code 2.; 194671)
+[2025-06-14T19:10:43.914+0200] {local_task_job.py:208} INFO - Task exited with return code 1
+[2025-06-14T19:10:43.933+0200] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

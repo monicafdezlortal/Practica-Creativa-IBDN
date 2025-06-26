@@ -1,35 +1,81 @@
-import sys, os, re
+import sys, os, re, json, time, uuid
+import iso8601, datetime
+
 from flask import Flask, render_template, request
+from flask_socketio import SocketIO, emit
 from pymongo import MongoClient
 from bson import json_util
+from kafka import KafkaProducer, KafkaConsumer
+from pyelasticsearch import ElasticSearch
 
 # Configuration details
 import config
-
-# Helpers for search and prediction APIs
 import predict_utils
 
-# Set up Flask, Mongo and Elasticsearch
 app = Flask(__name__)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
-
-client = MongoClient("mongodb://mongo:27017")
-
-
-from pyelasticsearch import ElasticSearch
+mongo_uri = "mongodb://mongo:27017/"
+client = MongoClient(mongo_uri)
 elastic = ElasticSearch(config.ELASTIC_URL)
 
-import json
-
-# Date/time stuff
-import iso8601
-import datetime
-
-# Setup Kafka
-from kafka import KafkaProducer
-producer = KafkaProducer(bootstrap_servers=['kafka:9092'],api_version=(0,10))
+producer = KafkaProducer(bootstrap_servers=['kafka:9092'], api_version=(0, 10))
 PREDICTION_TOPIC = 'flight-delay-ml-request'
 
+consumer = KafkaConsumer(
+    'flight-delay-ml-response',
+    bootstrap_servers='kafka:9092',
+    auto_offset_reset='earliest',
+    enable_auto_commit=True,
+    api_version=(0, 10)
+)
+
+
+@socketio.on('kafka_request')
+def handle_kafka_message(json_data):
+    print("Mensaje recibido desde WebSocket:", json_data)
+
+    # Añadir UUID único
+    unique_id = str(uuid.uuid4())
+    json_data["UUID"] = unique_id
+
+    # Añadir campos derivados esperados por Spark
+    json_data['Distance'] = predict_utils.get_flight_distance(
+        client, json_data['Origin'], json_data['Dest']
+    )
+    json_data.update(predict_utils.get_regression_date_args(json_data['FlightDate']))
+    json_data['Timestamp'] = predict_utils.get_current_timestamp()
+
+    # Enviar a Kafka
+    message_bytes = json.dumps(json_data).encode()
+    producer.send(PREDICTION_TOPIC, message_bytes)
+
+    # Esperar respuesta de Kafka
+    timeout_seconds = 10
+    start_time = time.time()
+    found_msg = None
+
+    while time.time() - start_time < timeout_seconds:
+        msg_pack = consumer.poll(timeout_ms=1000)
+        for tp, messages in msg_pack.items():
+            for message in messages:
+                try:
+                    decoded = json.loads(message.value.decode("utf-8"))
+                    if decoded.get("UUID") == unique_id:
+                        emit("kafka_response", decoded)
+                        return
+                except Exception:
+                    continue
+
+    # Si no llegó respuesta en el tiempo esperado
+    emit("kafka_response", {"status": "WAIT"})
+
+
+# print("Esperando mensajes...")
+'''
+for mensaje in consumer:
+    print(f"Mensaje recibido: {mensaje.value}")
+'''
 import uuid
 
 # Chapter 5 controller: Fetch a flight and display it
@@ -101,6 +147,9 @@ def total_flights_chart():
       ('Month', 1)
     ])
   return render_template('total_flights_chart.html', total_flights=total_flights)
+
+
+
 
 @app.route("/airplanes")
 @app.route("/airplanes/")
@@ -511,22 +560,44 @@ def flight_delays_page_kafka():
   
   return render_template('flight_delays_predict_kafka.html', form_config=form_config)
 
+import time
+
 @app.route("/flights/delays/predict/classify_realtime/response/<unique_id>")
 def classify_flight_delays_realtime_response(unique_id):
   """Serves predictions to polling requestors"""
+  consumer.subscribe(['flight-delay-ml-response'])
+  timeout_seconds = 20  # Tiempo máximo de espera para encontrar el mensaje
+  start_time = time.time()
+  found_msg = None
   
-  prediction = client.agile_data_science.flight_delay_ml_response.find_one(
-    {
-      "UUID": unique_id
-    }
-  )
-  
-  response = {"status": "WAIT", "id": unique_id}
-  if prediction:
-    response["status"] = "OK"
-    response["prediction"] = prediction
-  
-  return json_util.dumps(response)
+  while time.time() - start_time < timeout_seconds:
+    # Poll para recibir mensajes; ajusta el timeout_ms
+    msg_pack = consumer.poll(timeout_ms=1000)
+    for tp, messages in msg_pack.items():
+      for message in messages:
+        try:
+          data = json.loads(message.value.decode('utf-8'))
+        except Exception as e:
+          # Si no se puede decodificar, ignora este mensaje
+          continue
+        # Comprueba si el UUID del mensaje coincide con el parámetro
+        if data.get("UUID") == unique_id:
+          found_msg = data
+          break
+      if found_msg:
+        break
+    if found_msg:
+      break
+      
+  if found_msg:
+    prediction_value = found_msg.get("prediction", None)
+    response = {"status": "OK", "id": unique_id, "prediction": found_msg}
+  else:
+    response = {"status": "WAIT", "id": unique_id}
+
+# Devuelve la respuesta en formato JSON
+  return json.dumps(response)
+
 
 def shutdown_server():
   func = request.environ.get('werkzeug.server.shutdown')
@@ -539,9 +610,15 @@ def shutdown():
   shutdown_server()
   return 'Server shutting down...'
 
-if __name__ == "__main__":
+
+""" if __name__ == "__main__":
     app.run(
     debug=True,
     host='0.0.0.0',
     port='5001'
   )
+ """
+if __name__ == "__main__": #new para websocket 
+    socketio.run(app, host="0.0.0.0", port=5001, debug=True)
+
+  

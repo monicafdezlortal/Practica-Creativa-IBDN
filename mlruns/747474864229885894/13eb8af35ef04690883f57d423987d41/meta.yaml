@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/13eb8af35ef04690883f57d423987d41/artifacts
+end_time: 1750094079846
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 13eb8af35ef04690883f57d423987d41
+run_name: capricious-shoat-137
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750094015829
+status: 4
+tags: []
+user_id: monica.fernandez

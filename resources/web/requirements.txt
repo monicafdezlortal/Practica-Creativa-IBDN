@@ -1,4 +1,4 @@
-Flask
+
 beautifulsoup4 
 bs4
 frozendict
@@ -21,3 +21,11 @@ findspark
 iso8601
 urllib3==1.24
 joblib
+flask==2.2.5
+flask-socketio==5.3.6
+python-socketio==5.7.2
+python-engineio==4.3.2
+eventlet==0.33.3
+cassandra-driver
+
+

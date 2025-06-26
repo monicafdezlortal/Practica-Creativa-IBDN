@@ -9,7 +9,9 @@
   </p>
 
   <!-- Generate form from search_config and request args -->
-  <form id="flight_delay_classification" action="/flights/delays/predict/classify_realtime" method="post">
+  <!-- <form id="flight_delay_classification" action="/flights/delays/predict/classify_realtime" method="post"> -->
+  <form id="flight_delay_classification"> <!-- new para  websocket-->
+
     {% for item in form_config %}
       {% if 'label' in item %}
         <label for="{{item['field']}}">{{item['label']}}</label>
@@ -30,5 +32,46 @@
   </div>
 
   <!-- Load our form processing javascript -->
-  <script src="/static/flight_delay_predict_polling.js"></script>
+  <!-- <script src="/static/flight_delay_predict_polling.js"></script> -->
+  
+  <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script><!-- new para  websocket-->
+  <script>
+    const socket = io();
+
+    document.getElementById("flight_delay_classification").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(event.target);
+      const payload = {};
+
+      for (let [key, value] of formData.entries()) {
+        payload[key] = isNaN(value) ? value : Number(value);
+      }
+
+      socket.emit("kafka_request", payload);
+
+      document.getElementById("result").innerText = "Esperando respuesta...";
+
+      socket.on("kafka_response", (msg) => {
+        if (msg.status === "WAIT") {
+          document.getElementById("result").innerText = "No se recibió respuesta a tiempo.";
+        } else {
+          const predictionLabels = {
+            0: "Early (15+ Minutes Early)",
+            1: "Slightly Early (0-15 Minute Early)",
+            2: "Slightly Late (0-30 Minute Delay)",
+            3: "Very Late (30+ Minutes Late)",
+          };
+
+          //const label = predictionLabels[msg.Prediction] || "Desconocido";
+          const label = predictionLabels[msg.PredictedDelay] || "Desconocido";
+
+          document.getElementById("result").innerText = label;
+        }
+      });
+
+    });
+  </script>                       <!-- new para  websocket-->
+
+
 {% endblock %}

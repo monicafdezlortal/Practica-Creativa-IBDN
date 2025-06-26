@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/152a099a0841485cb4ab22495a545b04/artifacts
+end_time: 1750159907842
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 152a099a0841485cb4ab22495a545b04
+run_name: delicate-shark-532
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750159757567
+status: 4
+tags: []
+user_id: monica.fernandez

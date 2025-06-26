@@ -57,7 +57,7 @@ services:
     image: mongo:7.0.17
     container_name: mongo
     ports:
-      - "27017:27017"
+      - "27018:27017"
     volumes:
       - mongo_data:/data/db
     networks:
@@ -165,20 +165,31 @@ services:
       - spark-master
       - spark-worker-1
       - spark-worker-2
+      - cassandra-migrator
     ports:
       - "4040:4040"
     environment:
       - "SPARK_MASTER=spark://spark-master:7077"
-      - "constraint:node==spark-worker"
+      - "constraint:node==spark-worker"       
 
+      
     volumes:
       - ./flight_prediction/target/scala-2.12:/app
       - ./spark-jars:/jars
       - ./models:/app/models
+      - ./flight_prediction/target/scala-2.12/flight_prediction_2.12-0.1.jar:/app/flight_prediction_2.12-0.1.jar
 
     command: >
-      bash -c "sleep 15 && /spark/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1,org.mongodb.spark:mongo-spark-connector_2.12:10.1.1 --class es.upm.dit.ging.predictor.MakePrediction --master spark://spark-master:7077 /app/flight_prediction_2.12-0.1.jar"
-
+      bash -c "sleep 60 &&
+      /spark/bin/spark-submit
+      --packages com.datastax.spark:spark-cassandra-connector_2.12:3.2.0,org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.1,org.mongodb.spark:mongo-spark-connector_2.12:10.1.1
+      --conf spark.cassandra.connection.host=cassandra
+      --conf spark.cassandra.connection.port=9042
+      --class es.upm.dit.ging.predictor.MakePrediction
+      --master spark://spark-master:7077
+      /app/flight_prediction_2.12-0.1.jar &&
+      tail -f /dev/null
+      "
     networks:
       - prediction-net
 
@@ -238,6 +249,8 @@ services:
     image: bde2020/hadoop-historyserver:2.0.0-hadoop3.2.1-java8
     container_name: historyserver
     restart: always
+    ports: 
+     - "19888:8188"
     environment:
       SERVICE_PRECONDITION: "namenode:9000 namenode:9870 datanode:9864 resourcemanager:8088"
     volumes:
@@ -247,6 +260,38 @@ services:
     networks:
       - prediction-net
 
+  cassandra:
+    image: cassandra:4.1
+     
+    container_name: cassandra
+    ports:
+      - "9042:9042"
+    networks:
+      - prediction-net
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+    restart: always
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'describe keyspaces' || exit 1"]
+      interval: 20s
+      timeout: 10s
+      retries: 10
+
+  cassandra-migrator:
+    image: python:3.9
+    container_name: cassandra-migrator
+    volumes:
+      - ./data:/app
+    command: >
+      bash -c "
+        pip install cassandra-driver &&
+        python /app/migracion_cassandra.py"
+    depends_on:
+      - cassandra
+    networks:
+      - prediction-net
+
+
 
     
 volumes:
@@ -255,6 +300,7 @@ volumes:
   hadoop_namenode:
   hadoop_datanode:
   hadoop_historyserver:
+  cassandra_data:
 
 networks:
   prediction-net:

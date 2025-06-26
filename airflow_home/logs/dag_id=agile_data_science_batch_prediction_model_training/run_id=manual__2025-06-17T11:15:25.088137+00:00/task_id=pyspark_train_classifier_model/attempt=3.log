@@ -1,0 +1,2 @@
+[2025-06-17T13:25:04.049+0200] {taskinstance.py:1073} INFO - Dependencies not met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2025-06-17T11:25:04.049868+00:00 and task will be retried at 2025-06-17T11:30:03.905496+00:00.
+[2025-06-17T13:25:04.067+0200] {local_task_job.py:147} INFO - Task is not able to be run

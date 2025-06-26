@@ -23,6 +23,9 @@ def main(base_path):
         spark = pyspark.sql.SparkSession(sc).builder.appName(APP_NAME).getOrCreate()
 
     # 2. Iniciar una corrida (run) de MLflow al principio de la función main
+
+    mlflow.set_experiment("default")       #esto no se 
+
     with mlflow.start_run() as run:
         run_id = run.info.run_id
         experiment_id = run.info.experiment_id
@@ -92,6 +95,7 @@ def main(base_path):
             outputCol="Features_vec"
         )
         final_vectorized_features = vector_assembler.transform(ml_bucketized_features)
+
         vector_assembler_path = "/models/numeric_vector_assembler.bin"
         vector_assembler.write().overwrite().save(vector_assembler_path)
 

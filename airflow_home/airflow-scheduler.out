@@ -1,0 +1,321 @@
+[[34m2025-06-17 13:17:45,699[0m] {[34mscheduler_job.py:[0m714} INFO[0m - Starting the scheduler[0m
+[[34m2025-06-17 13:17:45,700[0m] {[34mscheduler_job.py:[0m719} INFO[0m - Processing each file at most -1 times[0m
+[[34m2025-06-17 13:17:45,705[0m] {[34mexecutor_loader.py:[0m107} INFO[0m - Loaded executor: SequentialExecutor[0m
+[[34m2025-06-17 13:17:45,711[0m] {[34mmanager.py:[0m163} INFO[0m - Launched DagFileProcessorManager with pid: 90086[0m
+[[34m2025-06-17 13:17:45,712[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-06-17 13:17:45,718[0m] {[34msettings.py:[0m58} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[2025-06-17T13:17:45.733+0200] {manager.py:409} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2025-06-17 13:18:50,892[0m] {[34mscheduler_job.py:[0m360} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:13:53+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:18:50,893[0m] {[34mscheduler_job.py:[0m425} INFO[0m - DAG agile_data_science_batch_prediction_model_training has 0/16 running and queued tasks[0m
+[[34m2025-06-17 13:18:50,893[0m] {[34mscheduler_job.py:[0m511} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:13:53+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:18:50,901[0m] {[34mscheduler_job.py:[0m550} INFO[0m - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-16T17:13:53+00:00', try_number=2, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-06-17 13:18:50,901[0m] {[34mbase_executor.py:[0m93} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:13:53+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:18:50,907[0m] {[34msequential_executor.py:[0m61} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:13:53+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:18:52,992[0m] {[34mdagbag.py:[0m538} INFO[0m - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py[0m
+[[34m2025-06-17 13:18:53,058[0m] {[34mtutorial_taskflow_api_virtualenv.py:[0m29} WARNING[0m - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:18:53,094[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:18:53,168[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-06-17 13:18:53,168[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:18:53,313[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): prepare_email>, send_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:18:53,313[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(EmailOperator): send_email>, prepare_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:18:53,331[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:18:53,331[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:18:53,331[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:18:53,331[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:18:53,332[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:18:53,332[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:18:53,332[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:18:53,332[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:18:53,333[0m] {[34mexample_python_operator.py:[0m90} WARNING[0m - The virtalenv_python example task requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:18:53,337[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_group>, delete_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:18:53,337[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry_group>, create_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:18:53,337[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_gcs>, delete_entry already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:18:53,337[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry>, create_entry_gcs already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:18:53,338[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_tag>, delete_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:18:53,338[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_tag>, create_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:18:54,156[0m] {[34mtask_command.py:[0m388} INFO[0m - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:13:53+00:00 [queued]> on host l019.lab.dit.upm.es[0m
+[[34m2025-06-17 13:20:07,193[0m] {[34msequential_executor.py:[0m68} ERROR[0m - Failed to execute task Command '['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:13:53+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py']' returned non-zero exit status 1..[0m
+[[34m2025-06-17 13:20:07,194[0m] {[34mscheduler_job.py:[0m602} INFO[0m - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-16T17:13:53+00:00 exited with status failed for try_number 2[0m
+[[34m2025-06-17 13:20:07,214[0m] {[34mscheduler_job.py:[0m645} INFO[0m - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-16T17:13:53+00:00, map_index=-1, run_start_date=2025-06-17 11:19:59.958618+00:00, run_end_date=2025-06-17 11:20:05.394360+00:00, run_duration=5.435742, state=up_for_retry, executor_state=failed, try_number=2, max_tries=3, job_id=32, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:19:54.574082+00:00, queued_by_job_id=31, pid=91354[0m
+[[34m2025-06-17 13:20:07,226[0m] {[34mmanager.py:[0m301} ERROR[0m - DagFileProcessorManager (PID=90086) last sent a heartbeat 76.48 seconds ago! Restarting it[0m
+[[34m2025-06-17 13:20:07,268[0m] {[34mprocess_utils.py:[0m129} INFO[0m - Sending 15 to group 90086. PIDs of all processes in the group: [90086][0m
+[[34m2025-06-17 13:20:07,269[0m] {[34mprocess_utils.py:[0m84} INFO[0m - Sending the signal 15 to group 90086[0m
+[[34m2025-06-17 13:20:07,690[0m] {[34mprocess_utils.py:[0m79} INFO[0m - Process psutil.Process(pid=90086, status='terminated', exitcode=0, started='13:17:45') (90086) terminated with exit code 0[0m
+[[34m2025-06-17 13:20:07,705[0m] {[34mmanager.py:[0m163} INFO[0m - Launched DagFileProcessorManager with pid: 91514[0m
+[[34m2025-06-17 13:20:07,729[0m] {[34msettings.py:[0m58} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[2025-06-17T13:20:07.757+0200] {manager.py:409} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2025-06-17 13:20:17,068[0m] {[34mdagrun.py:[0m586} ERROR[0m - Marking run <DagRun agile_data_science_batch_prediction_model_training @ 2025-06-16 17:13:53+00:00: manual__2025-06-16T17:13:53+00:00, state:running, queued_at: 2025-06-16 17:13:53.386256+00:00. externally triggered: True> failed[0m
+[[34m2025-06-17 13:20:17,071[0m] {[34mdagrun.py:[0m658} INFO[0m - DagRun Finished: dag_id=agile_data_science_batch_prediction_model_training, execution_date=2025-06-16 17:13:53+00:00, run_id=manual__2025-06-16T17:13:53+00:00, run_start_date=2025-06-17 11:11:26.251671+00:00, run_end_date=2025-06-17 11:20:17.071255+00:00, run_duration=530.819584, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-06-16 17:13:53+00:00, data_interval_end=2025-06-16 17:13:53+00:00, dag_hash=a8529028d99e9cec365e0fc826ff37fa[0m
+[[34m2025-06-17 13:20:17,117[0m] {[34mdag.py:[0m3437} INFO[0m - Setting next_dagrun for agile_data_science_batch_prediction_model_training to None, run_after=None[0m
+[[34m2025-06-17 13:20:55,644[0m] {[34mscheduler_job.py:[0m360} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:14:20.348382+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:20:55,646[0m] {[34mscheduler_job.py:[0m425} INFO[0m - DAG agile_data_science_batch_prediction_model_training has 0/16 running and queued tasks[0m
+[[34m2025-06-17 13:20:55,647[0m] {[34mscheduler_job.py:[0m511} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:14:20.348382+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:20:55,654[0m] {[34mscheduler_job.py:[0m550} INFO[0m - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-16T17:14:20.348382+00:00', try_number=2, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-06-17 13:20:55,654[0m] {[34mbase_executor.py:[0m93} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:14:20.348382+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:20:55,659[0m] {[34msequential_executor.py:[0m61} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:14:20.348382+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:20:57,760[0m] {[34mdagbag.py:[0m538} INFO[0m - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py[0m
+[[34m2025-06-17 13:20:57,818[0m] {[34mtutorial_taskflow_api_virtualenv.py:[0m29} WARNING[0m - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:20:57,856[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:20:57,931[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-06-17 13:20:57,931[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:20:58,087[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): prepare_email>, send_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:20:58,087[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(EmailOperator): send_email>, prepare_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:20:58,106[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:20:58,106[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:20:58,107[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:20:58,107[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:20:58,108[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:20:58,108[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:20:58,108[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:20:58,108[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:20:58,109[0m] {[34mexample_python_operator.py:[0m90} WARNING[0m - The virtalenv_python example task requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:20:58,114[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_group>, delete_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:20:58,114[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry_group>, create_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:20:58,114[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_gcs>, delete_entry already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:20:58,114[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry>, create_entry_gcs already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:20:58,114[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_tag>, delete_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:20:58,114[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_tag>, create_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:20:59,188[0m] {[34mtask_command.py:[0m388} INFO[0m - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:14:20.348382+00:00 [queued]> on host l019.lab.dit.upm.es[0m
+[[34m2025-06-17 13:23:54,899[0m] {[34mscheduler_job.py:[0m602} INFO[0m - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-16T17:14:20.348382+00:00 exited with status success for try_number 2[0m
+[[34m2025-06-17 13:23:54,917[0m] {[34mscheduler_job.py:[0m645} INFO[0m - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-16T17:14:20.348382+00:00, map_index=-1, run_start_date=2025-06-17 11:20:59.279726+00:00, run_end_date=2025-06-17 11:23:54.309902+00:00, run_duration=175.030176, state=up_for_retry, executor_state=success, try_number=2, max_tries=3, job_id=33, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:20:55.647733+00:00, queued_by_job_id=29, pid=91983[0m
+[[34m2025-06-17 13:23:54,928[0m] {[34mmanager.py:[0m301} ERROR[0m - DagFileProcessorManager (PID=91514) last sent a heartbeat 179.46 seconds ago! Restarting it[0m
+[[34m2025-06-17 13:23:54,971[0m] {[34mprocess_utils.py:[0m129} INFO[0m - Sending 15 to group 91514. PIDs of all processes in the group: [91514][0m
+[[34m2025-06-17 13:23:54,971[0m] {[34mprocess_utils.py:[0m84} INFO[0m - Sending the signal 15 to group 91514[0m
+[[34m2025-06-17 13:23:55,838[0m] {[34mprocess_utils.py:[0m79} INFO[0m - Process psutil.Process(pid=91514, status='terminated', exitcode=0, started='13:20:07') (91514) terminated with exit code 0[0m
+[[34m2025-06-17 13:23:55,842[0m] {[34mmanager.py:[0m163} INFO[0m - Launched DagFileProcessorManager with pid: 94369[0m
+[[34m2025-06-17 13:23:55,875[0m] {[34msettings.py:[0m58} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[2025-06-17T13:23:55.912+0200] {manager.py:409} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2025-06-17 13:23:56,177[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-06-17 13:23:56,197[0m] {[34mscheduler_job.py:[0m1431} INFO[0m - Marked 2 SchedulerJob instances as failed[0m
+[[34m2025-06-17 13:23:56,218[0m] {[34mscheduler_job.py:[0m1472} INFO[0m - Reset the following 1 orphaned TaskInstances:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [running]>[0m
+[[34m2025-06-17 13:23:56,808[0m] {[34mscheduler_job.py:[0m360} INFO[0m - 2 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [scheduled]>
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:23:56,808[0m] {[34mscheduler_job.py:[0m425} INFO[0m - DAG agile_data_science_batch_prediction_model_training has 0/16 running and queued tasks[0m
+[[34m2025-06-17 13:23:56,809[0m] {[34mscheduler_job.py:[0m425} INFO[0m - DAG agile_data_science_batch_prediction_model_training has 1/16 running and queued tasks[0m
+[[34m2025-06-17 13:23:56,809[0m] {[34mscheduler_job.py:[0m511} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [scheduled]>
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:23:56,816[0m] {[34mscheduler_job.py:[0m550} INFO[0m - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-17T11:15:25.088137+00:00', try_number=2, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-06-17 13:23:56,817[0m] {[34mbase_executor.py:[0m93} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:15:25.088137+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:23:56,817[0m] {[34mscheduler_job.py:[0m550} INFO[0m - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-17T11:21:00.851217+00:00', try_number=2, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-06-17 13:23:56,817[0m] {[34mbase_executor.py:[0m93} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:21:00.851217+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:23:56,834[0m] {[34msequential_executor.py:[0m61} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:15:25.088137+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:24:00,334[0m] {[34mdagbag.py:[0m538} INFO[0m - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py[0m
+[[34m2025-06-17 13:24:00,450[0m] {[34mtutorial_taskflow_api_virtualenv.py:[0m29} WARNING[0m - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:24:00,513[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:24:00,605[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-06-17 13:24:00,605[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:24:00,782[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): prepare_email>, send_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:24:00,782[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(EmailOperator): send_email>, prepare_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:24:00,799[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:24:00,800[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:24:00,800[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:24:00,800[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:24:00,800[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:24:00,801[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:24:00,801[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:24:00,801[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:24:00,801[0m] {[34mexample_python_operator.py:[0m90} WARNING[0m - The virtalenv_python example task requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:24:00,806[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_group>, delete_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:24:00,806[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry_group>, create_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:24:00,806[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_gcs>, delete_entry already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:24:00,806[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry>, create_entry_gcs already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:24:00,806[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_tag>, delete_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:24:00,806[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_tag>, create_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:24:02,638[0m] {[34mtask_command.py:[0m388} INFO[0m - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [queued]> on host l019.lab.dit.upm.es[0m
+[[34m2025-06-17 13:25:05,121[0m] {[34msequential_executor.py:[0m61} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:21:00.851217+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:25:07,213[0m] {[34mdagbag.py:[0m538} INFO[0m - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py[0m
+[[34m2025-06-17 13:25:07,298[0m] {[34mtutorial_taskflow_api_virtualenv.py:[0m29} WARNING[0m - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:25:07,363[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:25:07,476[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-06-17 13:25:07,476[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:25:07,699[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): prepare_email>, send_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:25:07,699[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(EmailOperator): send_email>, prepare_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:25:07,748[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:25:07,748[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:25:07,748[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:25:07,748[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:25:07,749[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:25:07,757[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:25:07,759[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:25:07,759[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:25:07,760[0m] {[34mexample_python_operator.py:[0m90} WARNING[0m - The virtalenv_python example task requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:25:07,777[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_group>, delete_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:25:07,777[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry_group>, create_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:25:07,777[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_gcs>, delete_entry already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:25:07,777[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry>, create_entry_gcs already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:25:07,777[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_tag>, delete_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:25:07,777[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_tag>, create_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:25:09,075[0m] {[34mtask_command.py:[0m388} INFO[0m - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [up_for_retry]> on host l019.lab.dit.upm.es[0m
+[[34m2025-06-17 13:25:09,841[0m] {[34mscheduler_job.py:[0m602} INFO[0m - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-17T11:15:25.088137+00:00 exited with status success for try_number 2[0m
+[[34m2025-06-17 13:25:09,841[0m] {[34mscheduler_job.py:[0m602} INFO[0m - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-17T11:21:00.851217+00:00 exited with status success for try_number 2[0m
+[[34m2025-06-17 13:25:09,859[0m] {[34mscheduler_job.py:[0m645} INFO[0m - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-17T11:15:25.088137+00:00, map_index=-1, run_start_date=2025-06-17 11:24:02.752077+00:00, run_end_date=2025-06-17 11:25:03.905496+00:00, run_duration=61.153419, state=up_for_retry, executor_state=success, try_number=2, max_tries=3, job_id=35, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:24:56.175466+00:00, queued_by_job_id=31, pid=94423[0m
+[[34m2025-06-17 13:25:09,860[0m] {[34mscheduler_job.py:[0m645} INFO[0m - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-17T11:21:00.851217+00:00, map_index=-1, run_start_date=2025-06-17 11:21:06.888234+00:00, run_end_date=2025-06-17 11:23:58.730514+00:00, run_duration=171.84228, state=up_for_retry, executor_state=success, try_number=2, max_tries=3, job_id=34, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:23:56.809436+00:00, queued_by_job_id=29, pid=92104[0m
+[[34m2025-06-17 13:25:09,871[0m] {[34mmanager.py:[0m301} ERROR[0m - DagFileProcessorManager (PID=94369) last sent a heartbeat 73.28 seconds ago! Restarting it[0m
+[[34m2025-06-17 13:25:09,902[0m] {[34mprocess_utils.py:[0m129} INFO[0m - Sending 15 to group 94369. PIDs of all processes in the group: [94369][0m
+[[34m2025-06-17 13:25:09,902[0m] {[34mprocess_utils.py:[0m84} INFO[0m - Sending the signal 15 to group 94369[0m
+[[34m2025-06-17 13:25:10,521[0m] {[34mprocess_utils.py:[0m79} INFO[0m - Process psutil.Process(pid=94369, status='terminated', exitcode=0, started='13:23:55') (94369) terminated with exit code 0[0m
+[[34m2025-06-17 13:25:10,526[0m] {[34mmanager.py:[0m163} INFO[0m - Launched DagFileProcessorManager with pid: 95331[0m
+[[34m2025-06-17 13:25:10,559[0m] {[34msettings.py:[0m58} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[2025-06-17T13:25:10.581+0200] {manager.py:409} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2025-06-17 13:28:56,447[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-06-17 13:28:59,363[0m] {[34mscheduler_job.py:[0m360} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:28:59,364[0m] {[34mscheduler_job.py:[0m425} INFO[0m - DAG agile_data_science_batch_prediction_model_training has 1/16 running and queued tasks[0m
+[[34m2025-06-17 13:28:59,364[0m] {[34mscheduler_job.py:[0m511} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:28:59,370[0m] {[34mscheduler_job.py:[0m550} INFO[0m - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-17T11:21:00.851217+00:00', try_number=3, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-06-17 13:28:59,370[0m] {[34mbase_executor.py:[0m93} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:21:00.851217+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:28:59,379[0m] {[34msequential_executor.py:[0m61} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:21:00.851217+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:29:01,469[0m] {[34mdagbag.py:[0m538} INFO[0m - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py[0m
+[[34m2025-06-17 13:29:01,560[0m] {[34mtutorial_taskflow_api_virtualenv.py:[0m29} WARNING[0m - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:29:01,626[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:29:01,720[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-06-17 13:29:01,720[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:29:01,911[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): prepare_email>, send_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:29:01,911[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(EmailOperator): send_email>, prepare_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:29:01,932[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:29:01,932[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:29:01,932[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:29:01,932[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:29:01,933[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:29:01,933[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:29:01,933[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:29:01,933[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:29:01,935[0m] {[34mexample_python_operator.py:[0m90} WARNING[0m - The virtalenv_python example task requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:29:01,948[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_group>, delete_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:29:01,948[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry_group>, create_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:29:01,948[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_gcs>, delete_entry already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:29:01,948[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry>, create_entry_gcs already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:29:01,948[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_tag>, delete_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:29:01,949[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_tag>, create_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:29:03,566[0m] {[34mtask_command.py:[0m388} INFO[0m - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:21:00.851217+00:00 [queued]> on host l019.lab.dit.upm.es[0m
+[[34m2025-06-17 13:31:49,311[0m] {[34mscheduler_job.py:[0m602} INFO[0m - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-17T11:21:00.851217+00:00 exited with status success for try_number 3[0m
+[[34m2025-06-17 13:31:49,332[0m] {[34mscheduler_job.py:[0m645} INFO[0m - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-17T11:21:00.851217+00:00, map_index=-1, run_start_date=2025-06-17 11:29:03.692885+00:00, run_end_date=2025-06-17 11:31:48.764385+00:00, run_duration=165.0715, state=failed, executor_state=success, try_number=3, max_tries=3, job_id=39, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:28:59.364464+00:00, queued_by_job_id=None, pid=97454[0m
+[[34m2025-06-17 13:31:49,343[0m] {[34mmanager.py:[0m301} ERROR[0m - DagFileProcessorManager (PID=95331) last sent a heartbeat 170.15 seconds ago! Restarting it[0m
+[[34m2025-06-17 13:31:49,356[0m] {[34mprocess_utils.py:[0m129} INFO[0m - Sending 15 to group 95331. PIDs of all processes in the group: [95331][0m
+[[34m2025-06-17 13:31:49,357[0m] {[34mprocess_utils.py:[0m84} INFO[0m - Sending the signal 15 to group 95331[0m
+[[34m2025-06-17 13:31:49,610[0m] {[34mprocess_utils.py:[0m79} INFO[0m - Process psutil.Process(pid=95331, status='terminated', exitcode=0, started='13:25:10') (95331) terminated with exit code 0[0m
+[[34m2025-06-17 13:31:49,614[0m] {[34mmanager.py:[0m163} INFO[0m - Launched DagFileProcessorManager with pid: 99845[0m
+[[34m2025-06-17 13:31:49,657[0m] {[34msettings.py:[0m58} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[2025-06-17T13:31:49.675+0200] {manager.py:409} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2025-06-17 13:33:56,613[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-06-17 13:33:56,647[0m] {[34mscheduler_job.py:[0m1472} INFO[0m - Reset the following 1 orphaned TaskInstances:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [running]>[0m
+[[34m2025-06-17 13:33:58,281[0m] {[34mscheduler_job.py:[0m360} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:33:58,281[0m] {[34mscheduler_job.py:[0m425} INFO[0m - DAG agile_data_science_batch_prediction_model_training has 0/16 running and queued tasks[0m
+[[34m2025-06-17 13:33:58,281[0m] {[34mscheduler_job.py:[0m511} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:33:58,288[0m] {[34mscheduler_job.py:[0m550} INFO[0m - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-17T11:15:25.088137+00:00', try_number=5, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-06-17 13:33:58,288[0m] {[34mbase_executor.py:[0m93} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:15:25.088137+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:33:58,300[0m] {[34msequential_executor.py:[0m61} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-17T11:15:25.088137+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:34:03,989[0m] {[34mdagbag.py:[0m538} INFO[0m - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py[0m
+[[34m2025-06-17 13:34:04,395[0m] {[34mtutorial_taskflow_api_virtualenv.py:[0m29} WARNING[0m - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:34:04,537[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:34:04,805[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-06-17 13:34:04,807[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:34:05,514[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): prepare_email>, send_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:34:05,515[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(EmailOperator): send_email>, prepare_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:34:05,612[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:34:05,612[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:34:05,612[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:34:05,612[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:34:05,613[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:34:05,613[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:34:05,613[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:34:05,613[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:34:05,614[0m] {[34mexample_python_operator.py:[0m90} WARNING[0m - The virtalenv_python example task requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:34:05,620[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_group>, delete_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:34:05,620[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry_group>, create_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:34:05,620[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_gcs>, delete_entry already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:34:05,620[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry>, create_entry_gcs already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:34:05,620[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_tag>, delete_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:34:05,620[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_tag>, create_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:34:09,307[0m] {[34mtask_command.py:[0m388} INFO[0m - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-17T11:15:25.088137+00:00 [failed]> on host l019.lab.dit.upm.es[0m
+[[34m2025-06-17 13:34:09,916[0m] {[34mscheduler_job.py:[0m602} INFO[0m - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-17T11:15:25.088137+00:00 exited with status success for try_number 5[0m
+[[34m2025-06-17 13:34:09,933[0m] {[34mscheduler_job.py:[0m645} INFO[0m - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-17T11:15:25.088137+00:00, map_index=-1, run_start_date=2025-06-17 11:31:54.287971+00:00, run_end_date=2025-06-17 11:34:06.527759+00:00, run_duration=132.239788, state=failed, executor_state=success, try_number=5, max_tries=3, job_id=40, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:33:58.282388+00:00, queued_by_job_id=29, pid=99869[0m
+[[34m2025-06-17 13:36:47,004[0m] {[34mscheduler_job.py:[0m360} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:14:20.348382+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:36:47,004[0m] {[34mscheduler_job.py:[0m425} INFO[0m - DAG agile_data_science_batch_prediction_model_training has 0/16 running and queued tasks[0m
+[[34m2025-06-17 13:36:47,004[0m] {[34mscheduler_job.py:[0m511} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:14:20.348382+00:00 [scheduled]>[0m
+[[34m2025-06-17 13:36:47,010[0m] {[34mscheduler_job.py:[0m550} INFO[0m - Sending TaskInstanceKey(dag_id='agile_data_science_batch_prediction_model_training', task_id='pyspark_train_classifier_model', run_id='manual__2025-06-16T17:14:20.348382+00:00', try_number=4, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-06-17 13:36:47,010[0m] {[34mbase_executor.py:[0m93} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:14:20.348382+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:36:47,015[0m] {[34msequential_executor.py:[0m61} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-06-16T17:14:20.348382+00:00', '--local', '--subdir', 'DAGS_FOLDER/setup.py'][0m
+[[34m2025-06-17 13:36:49,128[0m] {[34mdagbag.py:[0m538} INFO[0m - Filling up the DagBag from /home/monica.fernandez/practica_creativa/airflow_home/dags/setup.py[0m
+[[34m2025-06-17 13:36:49,298[0m] {[34mtutorial_taskflow_api_virtualenv.py:[0m29} WARNING[0m - The tutorial_taskflow_api_virtualenv example DAG requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:36:49,360[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:36:49,452[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-06-17 13:36:49,452[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-06-17 13:36:49,670[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): prepare_email>, send_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:36:49,670[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(EmailOperator): send_email>, prepare_email already registered for DAG: example_dag_decorator[0m
+[[34m2025-06-17 13:36:49,690[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:36:49,690[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:36:49,691[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:36:49,691[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:36:49,691[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:36:49,691[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:36:49,692[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): print_the_context>, log_sql_query already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:36:49,692[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(_PythonDecoratedOperator): log_sql_query>, print_the_context already registered for DAG: example_python_operator[0m
+[[34m2025-06-17 13:36:49,692[0m] {[34mexample_python_operator.py:[0m90} WARNING[0m - The virtalenv_python example task requires virtualenv, please install it.[0m
+[[34m2025-06-17 13:36:49,697[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_group>, delete_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:36:49,697[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry_group>, create_entry_group already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:36:49,697[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_entry_gcs>, delete_entry already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:36:49,697[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_entry>, create_entry_gcs already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:36:49,698[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): create_tag>, delete_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:36:49,698[0m] {[34mtaskmixin.py:[0m205} WARNING[0m - Dependency <Task(BashOperator): delete_tag>, create_tag already registered for DAG: example_complex[0m
+[[34m2025-06-17 13:36:51,229[0m] {[34mtask_command.py:[0m388} INFO[0m - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-06-16T17:14:20.348382+00:00 [queued]> on host l019.lab.dit.upm.es[0m
+[[34m2025-06-17 13:39:10,612[0m] {[34mscheduler_job.py:[0m602} INFO[0m - Executor reports execution of agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model run_id=manual__2025-06-16T17:14:20.348382+00:00 exited with status success for try_number 4[0m
+[[34m2025-06-17 13:39:10,627[0m] {[34mscheduler_job.py:[0m645} INFO[0m - TaskInstance Finished: dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, run_id=manual__2025-06-16T17:14:20.348382+00:00, map_index=-1, run_start_date=2025-06-17 11:36:51.325499+00:00, run_end_date=2025-06-17 11:39:10.197372+00:00, run_duration=138.871873, state=failed, executor_state=success, try_number=4, max_tries=3, job_id=42, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-06-17 11:36:47.005287+00:00, queued_by_job_id=29, pid=103221[0m
+[[34m2025-06-17 13:39:10,638[0m] {[34mmanager.py:[0m301} ERROR[0m - DagFileProcessorManager (PID=99845) last sent a heartbeat 143.73 seconds ago! Restarting it[0m
+[[34m2025-06-17 13:39:10,651[0m] {[34mprocess_utils.py:[0m129} INFO[0m - Sending 15 to group 99845. PIDs of all processes in the group: [99845][0m
+[[34m2025-06-17 13:39:10,651[0m] {[34mprocess_utils.py:[0m84} INFO[0m - Sending the signal 15 to group 99845[0m
+[[34m2025-06-17 13:39:11,307[0m] {[34mprocess_utils.py:[0m79} INFO[0m - Process psutil.Process(pid=99845, status='terminated', exitcode=0, started='13:31:49') (99845) terminated with exit code 0[0m
+[[34m2025-06-17 13:39:11,322[0m] {[34mmanager.py:[0m163} INFO[0m - Launched DagFileProcessorManager with pid: 105213[0m
+[[34m2025-06-17 13:39:11,335[0m] {[34msettings.py:[0m58} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[2025-06-17T13:39:11.353+0200] {manager.py:409} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2025-06-17 13:39:11,475[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-06-17 13:39:11,489[0m] {[34mscheduler_job.py:[0m1431} INFO[0m - Marked 1 SchedulerJob instances as failed[0m
+[[34m2025-06-17 13:39:29,406[0m] {[34mscheduler_job.py:[0m179} INFO[0m - Exiting gracefully upon receiving signal 15[0m
+[[34m2025-06-17 13:39:29,894[0m] {[34mprocess_utils.py:[0m129} INFO[0m - Sending 15 to group 105213. PIDs of all processes in the group: [][0m
+[[34m2025-06-17 13:39:29,895[0m] {[34mprocess_utils.py:[0m84} INFO[0m - Sending the signal 15 to group 105213[0m
+[[34m2025-06-17 13:39:29,896[0m] {[34mprocess_utils.py:[0m98} INFO[0m - Sending the signal 15 to process 105213 as process group is missing.[0m
+[[34m2025-06-17 13:39:29,924[0m] {[34mprocess_utils.py:[0m129} INFO[0m - Sending 15 to group 105213. PIDs of all processes in the group: [][0m
+[[34m2025-06-17 13:39:29,924[0m] {[34mprocess_utils.py:[0m84} INFO[0m - Sending the signal 15 to group 105213[0m
+[[34m2025-06-17 13:39:29,924[0m] {[34mprocess_utils.py:[0m98} INFO[0m - Sending the signal 15 to process 105213 as process group is missing.[0m
+[[34m2025-06-17 13:39:29,925[0m] {[34mscheduler_job.py:[0m788} INFO[0m - Exited execute loop[0m

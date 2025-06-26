@@ -1,0 +1,43 @@
+/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/gunicorn/util.py:25 UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+[2025-06-17 13:17:45 +0200] [90085] [INFO] Starting gunicorn 20.1.0
+[2025-06-17 13:17:45 +0200] [90085] [ERROR] Connection in use: ('::', 8793)
+[2025-06-17 13:17:45 +0200] [90085] [ERROR] Retrying in 1 second.
+[2025-06-17 13:17:46 +0200] [90085] [ERROR] Connection in use: ('::', 8793)
+[2025-06-17 13:17:46 +0200] [90085] [ERROR] Retrying in 1 second.
+[2025-06-17 13:17:47 +0200] [90085] [ERROR] Connection in use: ('::', 8793)
+[2025-06-17 13:17:47 +0200] [90085] [ERROR] Retrying in 1 second.
+[2025-06-17 13:17:48 +0200] [90085] [ERROR] Connection in use: ('::', 8793)
+[2025-06-17 13:17:48 +0200] [90085] [ERROR] Retrying in 1 second.
+[2025-06-17 13:17:49 +0200] [90085] [ERROR] Connection in use: ('::', 8793)
+[2025-06-17 13:17:49 +0200] [90085] [ERROR] Retrying in 1 second.
+[2025-06-17 13:17:50 +0200] [90085] [ERROR] Can't connect to ('::', 8793)
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/bin/airflow", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/__main__.py", line 39, in main
+    args.func(args)
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/cli/cli_parser.py", line 52, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/utils/cli.py", line 108, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 395, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 193, in _run_task_by_selected_method
+    _run_task_by_local_task_job(args, ti)
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/cli/commands/task_command.py", line 252, in _run_task_by_local_task_job
+    run_job.run()
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/jobs/base_job.py", line 258, in run
+    self._execute()
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/jobs/local_task_job.py", line 184, in _execute
+    self.heartbeat()
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/jobs/base_job.py", line 239, in heartbeat
+    self.heartbeat_callback(session=session)
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/utils/session.py", line 72, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/jobs/local_task_job.py", line 258, in heartbeat_callback
+    raise AirflowException("PID of job runner does not match")
+airflow.exceptions.AirflowException: PID of job runner does not match

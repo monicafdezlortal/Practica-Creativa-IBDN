@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/861a147eef944f8181360961073685ff/artifacts
+end_time: 1750092946635
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 861a147eef944f8181360961073685ff
+run_name: adventurous-newt-570
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750092881389
+status: 4
+tags: []
+user_id: monica.fernandez

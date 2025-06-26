@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/ff8287756bc848ceab212e9a01c393bc/artifacts
+end_time: 1750160349601
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: ff8287756bc848ceab212e9a01c393bc
+run_name: industrious-pug-174
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750160222469
+status: 4
+tags: []
+user_id: monica.fernandez

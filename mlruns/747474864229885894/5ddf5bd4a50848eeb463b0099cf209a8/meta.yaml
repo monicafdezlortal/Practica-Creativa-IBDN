@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/5ddf5bd4a50848eeb463b0099cf209a8/artifacts
+end_time: 1750675641316
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 5ddf5bd4a50848eeb463b0099cf209a8
+run_name: omniscient-doe-550
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750675438249
+status: 3
+tags: []
+user_id: monica.fernandez

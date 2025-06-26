@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/b3ed1ee41fdd4eda8a78d1cbd88001f2/artifacts
+end_time: 1750159433264
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: b3ed1ee41fdd4eda8a78d1cbd88001f2
+run_name: overjoyed-mule-730
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750159275556
+status: 4
+tags: []
+user_id: monica.fernandez

@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/monica.fernandez/practica_creativa/flight_prediction/src/main/scala/es/upm/dit/ging/predictor/MakePrediction.scala:155:8: value writeStream is not a member of org.apache.spark.sql.streaming.DataStreamWriter[org.apache.spark.sql.Row][0m
-[0m[[0m[31merror[0m] [0m[0mpossible cause: maybe a semicolon is missing before `value writeStream'?[0m
-[0m[[0m[31merror[0m] [0m[0m      .writeStream[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/monica.fernandez/practica_creativa/flight_prediction/src/main/scala/es/upm/dit/ging/predictor/MakePrediction.scala:101:33: not found: type DataFrame[0m
+[0m[[0m[31merror[0m] [0m[0m      .foreachBatch { (batchDF: DataFrame, batchId: Long) =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

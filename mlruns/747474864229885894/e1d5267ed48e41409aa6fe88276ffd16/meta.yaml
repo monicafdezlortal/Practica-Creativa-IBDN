@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/e1d5267ed48e41409aa6fe88276ffd16/artifacts
+end_time: 1750092143205
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: e1d5267ed48e41409aa6fe88276ffd16
+run_name: awesome-mule-492
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750092068116
+status: 4
+tags: []
+user_id: monica.fernandez
