@@ -43,6 +43,15 @@ Hemos desplegado por local atraves de la terminal:
   
   ![Airflow](img/airflow.png)
 
+
+- **Websockets**: permite comunicación bidireccional en tiempo real entre cliente y servidor sobre una única conexión TCP.
+  
+  ![Airflow](img/websockets.png)
+
+- **Cassandra**: base de datos NoSQL distribuida diseñada para manejar grandes volúmenes de datos con alta disponibilidad y sin un único punto de falla.
+  
+  ![Airflow](img/cassandra.png)
+
 ---
 
 
