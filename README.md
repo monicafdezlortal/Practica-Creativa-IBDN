@@ -61,7 +61,7 @@ Hemos desplegado por local atraves de la terminal:
 1. **Levantar la arquitectura**:
 
 ```bash
-docker-compose up --build
+docker compose up
 ```
 
 2. **Acceder a los servicios**:
