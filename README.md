@@ -49,6 +49,8 @@ Hemos desplegado por local atraves de la terminal:
   ![Websockets](img/websockets.png)
 
 - **Cassandra**: base de datos NoSQL distribuida diseñada para manejar grandes volúmenes de datos con alta disponibilidad y sin un único punto de falla.
+  ![Cassandra](img/cassandra2.png)
+  ![Cassandra](img/cassandra3.png)
   ![Cassandra](img/cassandra1.png)
   ![Cassandra](img/cassandra.png)
 
