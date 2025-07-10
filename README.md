@@ -99,19 +99,19 @@ docker compose up
 
 ## Entrenamiento del modelo
 
-El modelo se entrena usando un script en PySpark: train_spark_mllib_model.py. Este script:
-- Carga un conjunto de datos históricos de vuelos.
-- Preprocesa los datos con StringIndexer, Bucketizer, VectorAssembler.
-- Entrena un modelo de clasificación RandomForestClassifier.
-- Registra métricas y parámetros con MLflow.
-- Guarda los modelos entrenados en la carpeta /models.
-El entrenamiento se automatiza mediante un DAG de Apache Airflow:
-- Airflow ejecuta el script como una tarea programada.
-- Se integra con MLflow para registrar cada experimento.
-- Los modelos entrenados se reutilizan por Spark para predecir en tiempo real.
+El modelo se entrena usando un script en PySpark: `train_spark_mllib_model.py`. Este script:
 
-Vista del DAG en Airflow:
-Registro de experimentos y métricas en MLflow (ejecutado desde terminal).
+- Carga un conjunto de datos históricos de vuelos.
+- Preprocesa los datos con `StringIndexer`, `Bucketizer` y `VectorAssembler`.
+- Entrena un modelo de clasificación `RandomForestClassifier`.
+- Registra métricas y parámetros con **MLflow**.
+- Guarda los modelos entrenados en la carpeta `/models`.
+
+El entrenamiento se automatiza mediante un DAG de **Apache Airflow**:
+
+- **Airflow** ejecuta el script como una tarea programada.
+- Se integra con **MLflow** para registrar cada experimento.
+- Los modelos entrenados se reutilizan por **Spark** para predecir en tiempo real.
 
 ---
 
@@ -122,6 +122,8 @@ Registro de experimentos y métricas en MLflow (ejecutado desde terminal).
 - [x] Leer predicciones con NiFi y guardarlas cada 10s en un fichero `.txt`
 - [x] Guardar predicciones también en HDFS
 - [x] Entrenar el modelo desde Airflow con MLflow
+- [x] Incorporar WebSocket para recibir predicciones en tiempo real
+- [x] Migrar las distancias de MongoDB a Cassandra y usarlas desde Spark
 
 ---
 
