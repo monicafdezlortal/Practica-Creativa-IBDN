@@ -84,9 +84,9 @@ docker compose up
 2. Flask envía los datos al topic de Kafka: flight-delay-ml-request, añadiendo un identificador único (UUID) a cada mensaje.
 3. Spark lee esos datos desde Kafka, y consulta las distancias entre aeropuertos desde Cassandra (en lugar de MongoDB).
 4. Spark realiza la predicción y guarda el resultado en:
- -MongoDB
- -HDFS
- -Kafka (flight-delay-ml-response)
+- MongoDB
+- HDFS
+- Kafka (flight-delay-ml-response)
 5. La predicción vuelve a Flask mediante WebSocket, que escucha la respuesta asociada al UUID enviado.
 6. NiFi también lee las predicciones desde Kafka cada 10 segundos y las guarda en un archivo .txt.
 
