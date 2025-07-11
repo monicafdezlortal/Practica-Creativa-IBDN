@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/228200349a7b43bbb88f73a7c3d8e5fe/artifacts
+end_time: 1752227172808
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 228200349a7b43bbb88f73a7c3d8e5fe
+run_name: zealous-dove-257
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752227126945
+status: 4
+tags: []
+user_id: monica.fernandez

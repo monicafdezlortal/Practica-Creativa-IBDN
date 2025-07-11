@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/6421030dc848409ebdd3c0ea7499af18/artifacts
+end_time: 1752080285885
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 6421030dc848409ebdd3c0ea7499af18
+run_name: vaunted-asp-709
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752080220727
+status: 4
+tags: []
+user_id: monica.fernandez

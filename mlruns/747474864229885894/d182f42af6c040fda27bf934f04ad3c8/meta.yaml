@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/d182f42af6c040fda27bf934f04ad3c8/artifacts
+end_time: 1752139515529
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: d182f42af6c040fda27bf934f04ad3c8
+run_name: learned-pug-141
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752139514355
+status: 4
+tags: []
+user_id: monica.fernandez

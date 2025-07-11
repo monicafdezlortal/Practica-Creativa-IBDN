@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/9dad6ca8a0f34c638c0e98190b228a7e/artifacts
+end_time: 1752226516143
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 9dad6ca8a0f34c638c0e98190b228a7e
+run_name: chill-shrike-53
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752226512384
+status: 4
+tags: []
+user_id: monica.fernandez

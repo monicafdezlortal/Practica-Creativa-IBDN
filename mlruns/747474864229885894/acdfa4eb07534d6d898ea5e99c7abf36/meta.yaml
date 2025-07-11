@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/acdfa4eb07534d6d898ea5e99c7abf36/artifacts
+end_time: 1752227243924
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: acdfa4eb07534d6d898ea5e99c7abf36
+run_name: unequaled-sow-274
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752227197592
+status: 4
+tags: []
+user_id: monica.fernandez

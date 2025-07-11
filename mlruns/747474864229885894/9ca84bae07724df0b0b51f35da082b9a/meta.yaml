@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/9ca84bae07724df0b0b51f35da082b9a/artifacts
+end_time: 1752143248238
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 9ca84bae07724df0b0b51f35da082b9a
+run_name: clean-grub-889
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752143245509
+status: 4
+tags: []
+user_id: monica.fernandez

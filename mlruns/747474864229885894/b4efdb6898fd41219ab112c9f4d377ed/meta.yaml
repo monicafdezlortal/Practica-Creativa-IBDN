@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/b4efdb6898fd41219ab112c9f4d377ed/artifacts
+end_time: 1752099639095
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: b4efdb6898fd41219ab112c9f4d377ed
+run_name: fortunate-pug-580
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752099541887
+status: 4
+tags: []
+user_id: monica.fernandez

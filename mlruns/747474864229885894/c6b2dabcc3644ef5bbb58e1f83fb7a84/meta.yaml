@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/c6b2dabcc3644ef5bbb58e1f83fb7a84/artifacts
+end_time: 1752099226385
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: c6b2dabcc3644ef5bbb58e1f83fb7a84
+run_name: bouncy-penguin-267
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752099129425
+status: 4
+tags: []
+user_id: monica.fernandez

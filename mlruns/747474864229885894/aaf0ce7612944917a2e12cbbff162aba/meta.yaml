@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/aaf0ce7612944917a2e12cbbff162aba/artifacts
+end_time: 1752232585616
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: aaf0ce7612944917a2e12cbbff162aba
+run_name: selective-panda-454
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752232582672
+status: 4
+tags: []
+user_id: monica.fernandez

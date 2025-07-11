@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/4639bdfa97eb45dcb9f33c64cc3ae175/artifacts
+end_time: 1752098041755
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 4639bdfa97eb45dcb9f33c64cc3ae175
+run_name: crawling-calf-798
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752097946500
+status: 4
+tags: []
+user_id: monica.fernandez

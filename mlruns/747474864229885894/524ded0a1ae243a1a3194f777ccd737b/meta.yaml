@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/524ded0a1ae243a1a3194f777ccd737b/artifacts
+end_time: 1752234218553
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 524ded0a1ae243a1a3194f777ccd737b
+run_name: charming-mare-432
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752234214225
+status: 4
+tags: []
+user_id: monica.fernandez

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/54f37fe02e2242a6965188da26a1049d/artifacts
+end_time: 1752139867036
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 54f37fe02e2242a6965188da26a1049d
+run_name: stylish-tern-435
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752139865805
+status: 4
+tags: []
+user_id: monica.fernandez

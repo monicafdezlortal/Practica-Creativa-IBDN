@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/07bfd94a5aed48619fdcd2db81277e15/artifacts
+end_time: 1752143015969
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 07bfd94a5aed48619fdcd2db81277e15
+run_name: polite-quail-169
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752143013200
+status: 4
+tags: []
+user_id: monica.fernandez

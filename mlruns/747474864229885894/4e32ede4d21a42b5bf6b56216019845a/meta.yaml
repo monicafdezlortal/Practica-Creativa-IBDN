@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/4e32ede4d21a42b5bf6b56216019845a/artifacts
+end_time: 1752078570504
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 4e32ede4d21a42b5bf6b56216019845a
+run_name: welcoming-goat-884
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752078444791
+status: 4
+tags: []
+user_id: monica.fernandez

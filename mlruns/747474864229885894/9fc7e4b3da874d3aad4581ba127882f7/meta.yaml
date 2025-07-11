@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/9fc7e4b3da874d3aad4581ba127882f7/artifacts
+end_time: 1752075936623
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 9fc7e4b3da874d3aad4581ba127882f7
+run_name: fearless-shark-567
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752075856633
+status: 4
+tags: []
+user_id: monica.fernandez

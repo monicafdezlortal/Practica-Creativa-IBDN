@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/6597f8a8e12640b7ab6d2a974d1b8bd6/artifacts
+end_time: 1752232697520
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 6597f8a8e12640b7ab6d2a974d1b8bd6
+run_name: languid-skink-898
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752232694355
+status: 4
+tags: []
+user_id: monica.fernandez

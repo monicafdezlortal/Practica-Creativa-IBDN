@@ -1,0 +1,38 @@
+[2025-07-09T23:44:29.686+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-07-09T21:44:23.390308+00:00 [queued]>
+[2025-07-09T23:44:29.702+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-07-09T21:44:23.390308+00:00 [queued]>
+[2025-07-09T23:44:29.703+0200] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-07-09T23:44:29.703+0200] {taskinstance.py:1280} INFO - Starting attempt 1 of 4
+[2025-07-09T23:44:29.703+0200] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-07-09T23:44:29.723+0200] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): pyspark_train_classifier_model> on 2025-07-09 21:44:23.390308+00:00
+[2025-07-09T23:44:29.725+0200] {standard_task_runner.py:55} INFO - Started process 191774 to run task
+[2025-07-09T23:44:29.729+0200] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-07-09T21:44:23.390308+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/setup.py', '--cfg-path', '/tmp/tmpglapmb2y']
+[2025-07-09T23:44:29.730+0200] {standard_task_runner.py:83} INFO - Job 90: Subtask pyspark_train_classifier_model
+[2025-07-09T23:44:29.811+0200] {task_command.py:388} INFO - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-07-09T21:44:23.390308+00:00 [running]> on host l020.lab.dit.upm.es
+[2025-07-09T23:44:29.891+0200] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=agile_data_science_batch_prediction_model_training
+AIRFLOW_CTX_TASK_ID=pyspark_train_classifier_model
+AIRFLOW_CTX_EXECUTION_DATE=2025-07-09T21:44:23.390308+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-07-09T21:44:23.390308+00:00
+[2025-07-09T23:44:29.893+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-07-09T23:44:29.893+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\nspark-submit --master local[4]   /home/monica.fernandez/practica_creativa/resources/train_spark_mllib_model.py   /home/monica.fernandez/practica_creativa']
+[2025-07-09T23:44:29.900+0200] {subprocess.py:86} INFO - Output:
+[2025-07-09T23:44:31.750+0200] {local_task_job.py:112} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-07-09T23:44:31.750+0200] {taskinstance.py:1479} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-07-09T23:44:31.750+0200] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2025-07-09T23:44:31.772+0200] {process_utils.py:129} INFO - Sending 15 to group 191774. PIDs of all processes in the group: [191775, 191774]
+[2025-07-09T23:44:31.772+0200] {process_utils.py:84} INFO - Sending the signal 15 to group 191774
+[2025-07-09T23:44:31.772+0200] {taskinstance.py:1479} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-07-09T23:44:31.773+0200] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2025-07-09T23:44:31.774+0200] {standard_task_runner.py:100} ERROR - Failed to execute job 90 for task pyspark_train_classifier_model (Task received SIGTERM signal; 191774)
+[2025-07-09T23:44:32.172+0200] {process_utils.py:79} INFO - Process psutil.Process(pid=191775, status='terminated', started='23:44:28') (191775) terminated with exit code None
+[2025-07-09T23:44:32.173+0200] {process_utils.py:79} INFO - Process psutil.Process(pid=191774, status='terminated', exitcode=1, started='23:44:28') (191774) terminated with exit code 1
+[2025-07-09T23:44:32.173+0200] {local_task_job.py:208} INFO - Task exited with return code 143
+[2025-07-09T23:44:32.196+0200] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-09T23:44:34.396+0200] {taskinstance.py:1073} INFO - Dependencies not met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-07-09T21:44:23.390308+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2025-07-09T23:44:34.398+0200] {taskinstance.py:1073} INFO - Dependencies not met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-07-09T21:44:23.390308+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2025-07-09T23:44:34.405+0200] {local_task_job.py:147} INFO - Task is not able to be run

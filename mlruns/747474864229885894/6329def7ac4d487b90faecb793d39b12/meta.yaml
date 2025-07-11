@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/6329def7ac4d487b90faecb793d39b12/artifacts
+end_time: 1752081017140
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 6329def7ac4d487b90faecb793d39b12
+run_name: caring-lynx-419
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752080965177
+status: 4
+tags: []
+user_id: monica.fernandez

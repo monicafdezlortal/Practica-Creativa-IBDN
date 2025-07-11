@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/5e8f41d63bde400c85c0e615cff8bdd0/artifacts
+end_time: 1752078607610
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 5e8f41d63bde400c85c0e615cff8bdd0
+run_name: thundering-worm-673
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752078477434
+status: 4
+tags: []
+user_id: monica.fernandez

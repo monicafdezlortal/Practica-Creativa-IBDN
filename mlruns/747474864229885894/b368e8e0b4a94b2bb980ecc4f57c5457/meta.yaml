@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/b368e8e0b4a94b2bb980ecc4f57c5457/artifacts
+end_time: 1752228806810
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: b368e8e0b4a94b2bb980ecc4f57c5457
+run_name: wise-bee-14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752228803759
+status: 4
+tags: []
+user_id: monica.fernandez

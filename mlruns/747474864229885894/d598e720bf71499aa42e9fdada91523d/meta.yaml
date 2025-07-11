@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/d598e720bf71499aa42e9fdada91523d/artifacts
+end_time: 1752139202209
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: d598e720bf71499aa42e9fdada91523d
+run_name: adventurous-ox-917
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752139200504
+status: 4
+tags: []
+user_id: monica.fernandez

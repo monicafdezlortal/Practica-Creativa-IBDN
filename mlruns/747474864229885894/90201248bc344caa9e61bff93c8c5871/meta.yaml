@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/90201248bc344caa9e61bff93c8c5871/artifacts
+end_time: 1752102437490
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 90201248bc344caa9e61bff93c8c5871
+run_name: grandiose-shark-641
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752102315834
+status: 4
+tags: []
+user_id: monica.fernandez

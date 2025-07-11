@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/4511049f0cf4443aa9de1decca0cfca4/artifacts
+end_time: 1752235871971
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 4511049f0cf4443aa9de1decca0cfca4
+run_name: blushing-eel-296
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752235714170
+status: 3
+tags: []
+user_id: monica.fernandez

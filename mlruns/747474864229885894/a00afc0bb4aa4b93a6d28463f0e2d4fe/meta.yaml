@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/a00afc0bb4aa4b93a6d28463f0e2d4fe/artifacts
+end_time: 1752099112330
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: a00afc0bb4aa4b93a6d28463f0e2d4fe
+run_name: nimble-loon-916
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752099012808
+status: 4
+tags: []
+user_id: monica.fernandez

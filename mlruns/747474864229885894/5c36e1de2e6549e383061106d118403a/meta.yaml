@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/5c36e1de2e6549e383061106d118403a/artifacts
+end_time: 1752141794037
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 5c36e1de2e6549e383061106d118403a
+run_name: upset-snipe-862
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752141789061
+status: 4
+tags: []
+user_id: monica.fernandez

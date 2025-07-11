@@ -178,7 +178,7 @@ services:
       - ./spark-jars:/jars
       - ./models:/app/models
       - ./flight_prediction/target/scala-2.12/flight_prediction_2.12-0.1.jar:/app/flight_prediction_2.12-0.1.jar
-
+      - ./resources:/app/resources   
     command: >
       bash -c "sleep 60 &&
       /spark/bin/spark-submit

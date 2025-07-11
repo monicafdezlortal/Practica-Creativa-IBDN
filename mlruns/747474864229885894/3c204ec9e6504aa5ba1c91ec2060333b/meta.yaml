@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/3c204ec9e6504aa5ba1c91ec2060333b/artifacts
+end_time: 1752141592053
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 3c204ec9e6504aa5ba1c91ec2060333b
+run_name: rare-sponge-119
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752141590922
+status: 4
+tags: []
+user_id: monica.fernandez

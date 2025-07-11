@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/55106307941d4d6f9e0b3dc99118749c/artifacts
+end_time: 1752230682439
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 55106307941d4d6f9e0b3dc99118749c
+run_name: kindly-midge-896
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752230679490
+status: 4
+tags: []
+user_id: monica.fernandez

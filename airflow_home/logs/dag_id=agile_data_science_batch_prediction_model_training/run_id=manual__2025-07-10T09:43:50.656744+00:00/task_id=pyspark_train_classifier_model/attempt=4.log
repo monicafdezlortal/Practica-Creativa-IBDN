@@ -1,0 +1,134 @@
+[2025-07-10T11:59:42.881+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-07-10T09:43:50.656744+00:00 [queued]>
+[2025-07-10T11:59:42.904+0200] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-07-10T09:43:50.656744+00:00 [queued]>
+[2025-07-10T11:59:42.905+0200] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2025-07-10T11:59:42.905+0200] {taskinstance.py:1280} INFO - Starting attempt 4 of 4
+[2025-07-10T11:59:42.905+0200] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2025-07-10T11:59:42.931+0200] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): pyspark_train_classifier_model> on 2025-07-10 09:43:50.656744+00:00
+[2025-07-10T11:59:42.934+0200] {standard_task_runner.py:55} INFO - Started process 116120 to run task
+[2025-07-10T11:59:42.938+0200] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'agile_data_science_batch_prediction_model_training', 'pyspark_train_classifier_model', 'manual__2025-07-10T09:43:50.656744+00:00', '--job-id', '125', '--raw', '--subdir', 'DAGS_FOLDER/setup.py', '--cfg-path', '/tmp/tmp962x5bsw']
+[2025-07-10T11:59:42.940+0200] {standard_task_runner.py:83} INFO - Job 125: Subtask pyspark_train_classifier_model
+[2025-07-10T11:59:43.044+0200] {task_command.py:388} INFO - Running <TaskInstance: agile_data_science_batch_prediction_model_training.pyspark_train_classifier_model manual__2025-07-10T09:43:50.656744+00:00 [running]> on host l017.lab.dit.upm.es
+[2025-07-10T11:59:43.145+0200] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=agile_data_science_batch_prediction_model_training
+AIRFLOW_CTX_TASK_ID=pyspark_train_classifier_model
+AIRFLOW_CTX_EXECUTION_DATE=2025-07-10T09:43:50.656744+00:00
+AIRFLOW_CTX_TRY_NUMBER=4
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-07-10T09:43:50.656744+00:00
+[2025-07-10T11:59:43.147+0200] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-07-10T11:59:43.148+0200] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\nsource /home/monica.fernandez/practica_creativa/venv-airflow/bin/activate && export PYSPARK_PYTHON=/home/monica.fernandez/practica_creativa/venv-airflow/bin/python && spark-submit --master local[4]   /home/monica.fernandez/practica_creativa/resources/train_spark_mllib_model.py   /home/monica.fernandez/practica_creativa']
+[2025-07-10T11:59:43.157+0200] {subprocess.py:86} INFO - Output:
+[2025-07-10T11:59:45.116+0200] {subprocess.py:93} INFO - 25/07/10 11:59:45 WARN Utils: Your hostname, l017 resolves to a loopback address: 127.0.1.1; using 138.4.31.17 instead (on interface enp1s0)
+[2025-07-10T11:59:45.118+0200] {subprocess.py:93} INFO - 25/07/10 11:59:45 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2025-07-10T11:59:48.353+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SparkContext: Running Spark version 3.5.3
+[2025-07-10T11:59:48.354+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SparkContext: OS info Linux, 6.1.0-35-amd64, amd64
+[2025-07-10T11:59:48.354+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SparkContext: Java version 17.0.14
+[2025-07-10T11:59:48.404+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-07-10T11:59:48.484+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO ResourceUtils: ==============================================================
+[2025-07-10T11:59:48.485+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2025-07-10T11:59:48.485+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO ResourceUtils: ==============================================================
+[2025-07-10T11:59:48.486+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SparkContext: Submitted application: train_spark_mllib_model.py
+[2025-07-10T11:59:48.505+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2025-07-10T11:59:48.514+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO ResourceProfile: Limiting resource is cpu
+[2025-07-10T11:59:48.515+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2025-07-10T11:59:48.562+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SecurityManager: Changing view acls to: monica.fernandez
+[2025-07-10T11:59:48.563+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SecurityManager: Changing modify acls to: monica.fernandez
+[2025-07-10T11:59:48.564+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SecurityManager: Changing view acls groups to:
+[2025-07-10T11:59:48.565+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SecurityManager: Changing modify acls groups to:
+[2025-07-10T11:59:48.566+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: monica.fernandez; groups with view permissions: EMPTY; users with modify permissions: monica.fernandez; groups with modify permissions: EMPTY
+[2025-07-10T11:59:48.777+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO Utils: Successfully started service 'sparkDriver' on port 43803.
+[2025-07-10T11:59:48.810+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SparkEnv: Registering MapOutputTracker
+[2025-07-10T11:59:48.855+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SparkEnv: Registering BlockManagerMaster
+[2025-07-10T11:59:48.874+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2025-07-10T11:59:48.876+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2025-07-10T11:59:48.894+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2025-07-10T11:59:48.916+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-f021866f-d888-4635-a741-484fe8061ba1
+[2025-07-10T11:59:48.932+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2025-07-10T11:59:48.963+0200] {subprocess.py:93} INFO - 25/07/10 11:59:48 INFO SparkEnv: Registering OutputCommitCoordinator
+[2025-07-10T11:59:49.100+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2025-07-10T11:59:49.154+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2025-07-10T11:59:49.161+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+[2025-07-10T11:59:49.253+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO Executor: Starting executor ID driver on host 138.4.31.17
+[2025-07-10T11:59:49.253+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO Executor: OS info Linux, 6.1.0-35-amd64, amd64
+[2025-07-10T11:59:49.253+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO Executor: Java version 17.0.14
+[2025-07-10T11:59:49.259+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2025-07-10T11:59:49.260+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@350e44ae for default.
+[2025-07-10T11:59:49.280+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44373.
+[2025-07-10T11:59:49.280+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO NettyBlockTransferService: Server created on 138.4.31.17:44373
+[2025-07-10T11:59:49.282+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2025-07-10T11:59:49.287+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 138.4.31.17, 44373, None)
+[2025-07-10T11:59:49.291+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO BlockManagerMasterEndpoint: Registering block manager 138.4.31.17:44373 with 434.4 MiB RAM, BlockManagerId(driver, 138.4.31.17, 44373, None)
+[2025-07-10T11:59:49.294+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 138.4.31.17, 44373, None)
+[2025-07-10T11:59:49.295+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 138.4.31.17, 44373, None)
+[2025-07-10T11:59:49.659+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2025-07-10T11:59:49.672+0200] {subprocess.py:93} INFO - 25/07/10 11:59:49 INFO SharedState: Warehouse path is 'file:/tmp/airflowtmpwxix_wjh/spark-warehouse'.
+[2025-07-10T11:59:50.281+0200] {subprocess.py:93} INFO - 25/07/10 11:59:50 WARN SparkSession: Using an existing Spark session; only runtime SQL configurations will take effect.
+[2025-07-10T11:59:50.961+0200] {subprocess.py:93} INFO - MLflow Run ID: 3c204ec9e6504aa5ba1c91ec2060333b
+[2025-07-10T11:59:50.961+0200] {subprocess.py:93} INFO - MLflow Tracking URI: file:///home/monica.fernandez/practica_creativa/mlruns
+[2025-07-10T11:59:51.110+0200] {subprocess.py:93} INFO - 25/07/10 11:59:51 INFO InMemoryFileIndex: It took 33 ms to list leaf files for 1 paths.
+[2025-07-10T11:59:52.057+0200] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-07-10T11:59:52.057+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/resources/train_spark_mllib_model.py", line 147, in <module>
+[2025-07-10T11:59:52.057+0200] {subprocess.py:93} INFO -     main(sys.argv[1] if len(sys.argv) > 1 else ".")
+[2025-07-10T11:59:52.058+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/practica_creativa/resources/train_spark_mllib_model.py", line 64, in main
+[2025-07-10T11:59:52.058+0200] {subprocess.py:93} INFO -     .load()
+[2025-07-10T11:59:52.059+0200] {subprocess.py:93} INFO -      ^^^^^^
+[2025-07-10T11:59:52.059+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/.sdkman/candidates/spark/current/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 314, in load
+[2025-07-10T11:59:52.059+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/.sdkman/candidates/spark/current/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+[2025-07-10T11:59:52.059+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/.sdkman/candidates/spark/current/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 179, in deco
+[2025-07-10T11:59:52.059+0200] {subprocess.py:93} INFO -   File "/home/monica.fernandez/.sdkman/candidates/spark/current/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 326, in get_return_value
+[2025-07-10T11:59:52.059+0200] {subprocess.py:93} INFO - py4j.protocol.Py4JJavaError: An error occurred while calling o58.load.
+[2025-07-10T11:59:52.059+0200] {subprocess.py:93} INFO - : org.apache.spark.SparkClassNotFoundException: [DATA_SOURCE_NOT_FOUND] Failed to find the data source: org.apache.spark.sql.cassandra. Please find packages at `https://spark.apache.org/third-party-projects.html`.
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at org.apache.spark.sql.errors.QueryExecutionErrors$.dataSourceNotFoundError(QueryExecutionErrors.scala:725)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:647)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSourceV2(DataSource.scala:697)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:208)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:172)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at py4j.Gateway.invoke(Gateway.java:282)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+[2025-07-10T11:59:52.060+0200] {subprocess.py:93} INFO - 	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 	at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - Caused by: java.lang.ClassNotFoundException: org.apache.spark.sql.cassandra.DefaultSource
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$5(DataSource.scala:633)
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 	at scala.util.Try$.apply(Try.scala:213)
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.$anonfun$lookupDataSource$4(DataSource.scala:633)
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 	at scala.util.Failure.orElse(Try.scala:224)
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.DataSource$.lookupDataSource(DataSource.scala:633)
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 	... 15 more
+[2025-07-10T11:59:52.061+0200] {subprocess.py:93} INFO - 
+[2025-07-10T11:59:52.367+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO SparkContext: Invoking stop() from shutdown hook
+[2025-07-10T11:59:52.367+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO SparkContext: SparkContext is stopping with exitCode 0.
+[2025-07-10T11:59:52.375+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO SparkUI: Stopped Spark web UI at http://138.4.31.17:4041
+[2025-07-10T11:59:52.385+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2025-07-10T11:59:52.396+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO MemoryStore: MemoryStore cleared
+[2025-07-10T11:59:52.396+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO BlockManager: BlockManager stopped
+[2025-07-10T11:59:52.402+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2025-07-10T11:59:52.405+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2025-07-10T11:59:52.411+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO SparkContext: Successfully stopped SparkContext
+[2025-07-10T11:59:52.412+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO ShutdownHookManager: Shutdown hook called
+[2025-07-10T11:59:52.412+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO ShutdownHookManager: Deleting directory /tmp/spark-dfbbce08-d313-4554-9bce-ab2f7a593dae
+[2025-07-10T11:59:52.416+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO ShutdownHookManager: Deleting directory /tmp/spark-afffa440-a773-49e0-a2c1-08df791490d5
+[2025-07-10T11:59:52.419+0200] {subprocess.py:93} INFO - 25/07/10 11:59:52 INFO ShutdownHookManager: Deleting directory /tmp/spark-dfbbce08-d313-4554-9bce-ab2f7a593dae/pyspark-74af5bc0-e6a1-448c-9126-2f404eda02ab
+[2025-07-10T11:59:52.447+0200] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-07-10T11:59:52.462+0200] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/monica.fernandez/practica_creativa/venv-airflow/lib/python3.11/site-packages/airflow/operators/bash.py", line 196, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-07-10T11:59:52.466+0200] {taskinstance.py:1318} INFO - Marking task as FAILED. dag_id=agile_data_science_batch_prediction_model_training, task_id=pyspark_train_classifier_model, execution_date=20250710T094350, start_date=20250710T095942, end_date=20250710T095952
+[2025-07-10T11:59:52.495+0200] {standard_task_runner.py:100} ERROR - Failed to execute job 125 for task pyspark_train_classifier_model (Bash command failed. The command returned a non-zero exit code 1.; 116120)
+[2025-07-10T11:59:52.501+0200] {local_task_job.py:208} INFO - Task exited with return code 1
+[2025-07-10T11:59:52.521+0200] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

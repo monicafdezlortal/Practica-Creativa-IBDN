@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/261f8434c9d1412f91a3d800f6f9251a/artifacts
+end_time: 1752079905400
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 261f8434c9d1412f91a3d800f6f9251a
+run_name: luminous-bear-239
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752079844752
+status: 4
+tags: []
+user_id: monica.fernandez

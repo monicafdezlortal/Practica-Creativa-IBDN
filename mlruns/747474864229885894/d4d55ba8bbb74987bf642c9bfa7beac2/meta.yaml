@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/d4d55ba8bbb74987bf642c9bfa7beac2/artifacts
+end_time: 1752142114314
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: d4d55ba8bbb74987bf642c9bfa7beac2
+run_name: rare-dove-162
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752142109736
+status: 4
+tags: []
+user_id: monica.fernandez

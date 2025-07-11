@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/a41079de50ce4ca087330b8784754007/artifacts
+end_time: 1752231003898
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: a41079de50ce4ca087330b8784754007
+run_name: legendary-frog-905
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752231000643
+status: 4
+tags: []
+user_id: monica.fernandez

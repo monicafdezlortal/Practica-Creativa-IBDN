@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/d769c5ce7b1a44558e95c6ed0e79e8bb/artifacts
+end_time: 1752055175948
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: d769c5ce7b1a44558e95c6ed0e79e8bb
+run_name: rogue-elk-795
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752055096831
+status: 4
+tags: []
+user_id: monica.fernandez

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/33e6cf1f1e2f47c7b1ed845b3de36402/artifacts
+end_time: 1752226860082
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 33e6cf1f1e2f47c7b1ed845b3de36402
+run_name: hilarious-koi-455
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752226855989
+status: 4
+tags: []
+user_id: monica.fernandez

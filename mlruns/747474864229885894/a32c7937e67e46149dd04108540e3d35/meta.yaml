@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/a32c7937e67e46149dd04108540e3d35/artifacts
+end_time: 1752231617634
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: a32c7937e67e46149dd04108540e3d35
+run_name: traveling-shrike-314
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752231614334
+status: 4
+tags: []
+user_id: monica.fernandez

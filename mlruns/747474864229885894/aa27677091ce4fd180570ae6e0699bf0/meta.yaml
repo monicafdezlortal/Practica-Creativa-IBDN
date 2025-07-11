@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/aa27677091ce4fd180570ae6e0699bf0/artifacts
+end_time: 1752227520234
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: aa27677091ce4fd180570ae6e0699bf0
+run_name: gaudy-fly-513
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752227517405
+status: 4
+tags: []
+user_id: monica.fernandez

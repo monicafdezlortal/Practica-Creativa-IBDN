@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/869caf97436c4058816a68a336529a75/artifacts
+end_time: 1752140147696
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 869caf97436c4058816a68a336529a75
+run_name: handsome-cow-335
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752140146483
+status: 4
+tags: []
+user_id: monica.fernandez

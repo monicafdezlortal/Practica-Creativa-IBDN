@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/72fc5d0628d54f80bcfc323b6630ba07/artifacts
+end_time: 1752234711913
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 72fc5d0628d54f80bcfc323b6630ba07
+run_name: luxuriant-vole-514
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752234708571
+status: 4
+tags: []
+user_id: monica.fernandez

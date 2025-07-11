@@ -25,10 +25,16 @@ training_dag = DAG(
 
 # Bash command templates
 pyspark_bash_command = """
-spark-submit --master {{ params.master }} \
+source /home/monica.fernandez/practica_creativa/venv-airflow/bin/activate && \
+export PYSPARK_PYTHON=/home/monica.fernandez/practica_creativa/venv-airflow/bin/python && \
+spark-submit \
+  --master {{ params.master }} \
+  --packages com.datastax.spark:spark-cassandra-connector_2.12:3.5.0,com.github.jnr:jnr-posix:3.1.15 \
   {{ params.base_path }}/{{ params.filename }} \
   {{ params.base_path }}
 """
+
+
 
 # Train the classifier model
 train_classifier_model_operator = BashOperator(
@@ -37,8 +43,14 @@ train_classifier_model_operator = BashOperator(
   params = {
     "master": "local[4]",
     "filename": "resources/train_spark_mllib_model.py",
-    "base_path": PROJECT_HOME
+    "base_path": "/home/monica.fernandez/practica_creativa"
+  
   },
+  
+
+
+
+  execution_timeout=timedelta(minutes=30), 
   dag=training_dag
 )
 

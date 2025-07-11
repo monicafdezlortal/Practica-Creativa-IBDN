@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/7d48c925343342a7bb7e811ac696f68e/artifacts
+end_time: 1752054357905
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 7d48c925343342a7bb7e811ac696f68e
+run_name: enthused-croc-972
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752054259469
+status: 4
+tags: []
+user_id: monica.fernandez

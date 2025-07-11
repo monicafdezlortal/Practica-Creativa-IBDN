@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/278a1af4dff94020a331634334d773bc/artifacts
+end_time: 1752078971338
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 278a1af4dff94020a331634334d773bc
+run_name: judicious-dove-7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752078891755
+status: 4
+tags: []
+user_id: monica.fernandez

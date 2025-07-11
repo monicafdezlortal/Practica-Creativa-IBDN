@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/18b5d1dde6ed44d1b1a63cc7480414db/artifacts
+end_time: 1752139833145
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 18b5d1dde6ed44d1b1a63cc7480414db
+run_name: worried-shoat-556
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752139831815
+status: 4
+tags: []
+user_id: monica.fernandez

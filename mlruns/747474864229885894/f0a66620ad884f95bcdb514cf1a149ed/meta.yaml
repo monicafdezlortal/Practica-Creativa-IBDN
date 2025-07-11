@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/f0a66620ad884f95bcdb514cf1a149ed/artifacts
+end_time: 1752140644480
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: f0a66620ad884f95bcdb514cf1a149ed
+run_name: clean-turtle-521
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752140643222
+status: 4
+tags: []
+user_id: monica.fernandez

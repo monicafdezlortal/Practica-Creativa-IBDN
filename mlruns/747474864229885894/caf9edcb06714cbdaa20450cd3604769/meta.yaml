@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/caf9edcb06714cbdaa20450cd3604769/artifacts
+end_time: 1752141276748
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: caf9edcb06714cbdaa20450cd3604769
+run_name: enthused-shad-516
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752141275284
+status: 4
+tags: []
+user_id: monica.fernandez

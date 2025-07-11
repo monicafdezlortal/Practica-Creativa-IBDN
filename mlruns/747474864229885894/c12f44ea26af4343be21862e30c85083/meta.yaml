@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/c12f44ea26af4343be21862e30c85083/artifacts
+end_time: 1752229952980
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: c12f44ea26af4343be21862e30c85083
+run_name: wistful-vole-559
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752229950115
+status: 4
+tags: []
+user_id: monica.fernandez

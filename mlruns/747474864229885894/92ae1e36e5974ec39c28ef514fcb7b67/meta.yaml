@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/92ae1e36e5974ec39c28ef514fcb7b67/artifacts
+end_time: 1752233021136
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 92ae1e36e5974ec39c28ef514fcb7b67
+run_name: marvelous-goose-739
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752233016068
+status: 4
+tags: []
+user_id: monica.fernandez

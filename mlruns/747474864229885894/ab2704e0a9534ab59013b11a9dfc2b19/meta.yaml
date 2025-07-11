@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/ab2704e0a9534ab59013b11a9dfc2b19/artifacts
+end_time: 1752080653141
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: ab2704e0a9534ab59013b11a9dfc2b19
+run_name: sassy-newt-900
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752080600746
+status: 4
+tags: []
+user_id: monica.fernandez

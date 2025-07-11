@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/a143b27f4b004c19a552e1bfc92fa6af/artifacts
+end_time: 1752076336416
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: a143b27f4b004c19a552e1bfc92fa6af
+run_name: capricious-stag-544
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752076262250
+status: 4
+tags: []
+user_id: monica.fernandez

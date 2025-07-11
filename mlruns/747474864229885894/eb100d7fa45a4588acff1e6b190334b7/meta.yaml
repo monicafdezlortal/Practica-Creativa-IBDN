@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/eb100d7fa45a4588acff1e6b190334b7/artifacts
+end_time: 1752227840168
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: eb100d7fa45a4588acff1e6b190334b7
+run_name: enthused-elk-844
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752227837340
+status: 4
+tags: []
+user_id: monica.fernandez

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/2918531006874566a09440f07e0e42ac/artifacts
+end_time: 1752231328408
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 2918531006874566a09440f07e0e42ac
+run_name: awesome-hound-79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752231324114
+status: 4
+tags: []
+user_id: monica.fernandez

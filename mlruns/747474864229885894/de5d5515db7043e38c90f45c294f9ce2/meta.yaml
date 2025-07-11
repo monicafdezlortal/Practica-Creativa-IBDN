@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/de5d5515db7043e38c90f45c294f9ce2/artifacts
+end_time: 1752230300969
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: de5d5515db7043e38c90f45c294f9ce2
+run_name: mysterious-gull-791
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752230295468
+status: 4
+tags: []
+user_id: monica.fernandez

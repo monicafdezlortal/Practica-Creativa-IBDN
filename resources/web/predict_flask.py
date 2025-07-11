@@ -40,9 +40,7 @@ def handle_kafka_message(json_data):
     json_data["UUID"] = unique_id
 
     # Añadir campos derivados esperados por Spark
-    json_data['Distance'] = predict_utils.get_flight_distance(
-        client, json_data['Origin'], json_data['Dest']
-    )
+    
     json_data.update(predict_utils.get_regression_date_args(json_data['FlightDate']))
     json_data['Timestamp'] = predict_utils.get_current_timestamp()
 

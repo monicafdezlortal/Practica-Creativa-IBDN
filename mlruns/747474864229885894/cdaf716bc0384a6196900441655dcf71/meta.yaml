@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/cdaf716bc0384a6196900441655dcf71/artifacts
+end_time: 1752233247658
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: cdaf716bc0384a6196900441655dcf71
+run_name: learned-crow-59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752233241348
+status: 4
+tags: []
+user_id: monica.fernandez

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/57b6d039622841c198c281ad08b4a791/artifacts
+end_time: 1752077220653
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 57b6d039622841c198c281ad08b4a791
+run_name: grandiose-goose-570
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752077146175
+status: 4
+tags: []
+user_id: monica.fernandez
