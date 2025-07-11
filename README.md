@@ -23,11 +23,13 @@ Describimos cada una:
   ![Spark](img/spark.png)
   
 - **MongoDB**: almacena las predicciones en base de datos.
+  ![mongo](img/mongo.jpeg)
   
 - **HDFS**: también almacena las predicciones como archivos parquet.
   
 Contenido del directorio `/user/spark/prediction` donde Spark almacena los `.parquet`.
   ![HDFS](img/hdfs.png)
+  ![HDFS](img/hdfs.jpeg)
 
 - **NiFi**: lee las predicciones desde Kafka y las guarda cada 10 segundos en un `.txt`.
   
