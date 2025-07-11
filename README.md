@@ -1,7 +1,7 @@
 ## PRÁCTICA CREATIVA
 
-En esta última práctica de la asignatura de Ingeniería de Big Data en la Nube, se nos pedía implementar una arquitectura completa para predecir retrasos de vuelos en tiempo real utilizando las sigueintes tecnologías: 
- **Docker, Apache Kafka, Apache Spark, NiFi, MongoDB, HDFS, MLflow y Airflow**. A continuación se describe la arquitectura para el correcto despliegue de la práctica.
+En esta última práctica de la asignatura de Ingeniería de Big Data en la Nube, se nos pedía implementar una arquitectura completa para predecir retrasos de vuelos en tiempo real utilizando las siguientes tecnologías: 
+ **Docker, Apache Kafka, Apache Spark, NiFi, MongoDB, HDFS, MLflow y Airflow, Cassandra y WebSocket.**. A continuación se describe la arquitectura para el correcto despliegue de la práctica.
 
 ---
 
