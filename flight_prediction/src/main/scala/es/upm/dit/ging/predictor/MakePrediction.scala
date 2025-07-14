@@ -6,6 +6,8 @@ import org.apache.spark.sql.functions.{concat, from_json, lit}
 import org.apache.spark.sql.types.{DataTypes, StructType}
 
 import org.apache.spark.sql.{SparkSession, DataFrame}
+import org.apache.spark.ml.PipelineModel
+    
 
 
 object MakePrediction {
@@ -31,17 +33,22 @@ object MakePrediction {
 
     val vectorAssembler = new VectorAssembler()
       .setInputCols(Array(
-        "DepDelay", "DayOfMonth", "DayOfWeek", "DayOfYear",
+        "DepDelay","Distance", "DayOfMonth", "DayOfWeek", "DayOfYear",
         "Carrier_index", "Origin_index", "Dest_index", "Route_index"
       ))
 
       .setOutputCol("features")
       .setHandleInvalid("keep")
 
-    
-    val rfc = RandomForestClassificationModel.load(
+
+    // Cargar modelo completo (Pipeline)
+    val pipelineModel = PipelineModel.load(
       s"$base_path/models/spark_random_forest_classifier.flight_delays.5.0.bin"
     )
+
+    // Extraer el RandomForest de la última etapa
+    val rfc = pipelineModel.stages.last.asInstanceOf[RandomForestClassificationModel]
+
 
     // Cargar distancias desde Cassandra
     val cassandraDistances = spark.read

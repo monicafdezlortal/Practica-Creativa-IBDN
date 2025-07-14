@@ -1,0 +1,14 @@
+artifact_uri: file:///home/monica.fernandez/practica_creativa/mlruns/747474864229885894/3a76f10e405e429ab683744f070fd452/artifacts
+end_time: 1752489314904
+entry_point_name: ''
+experiment_id: '747474864229885894'
+lifecycle_stage: active
+run_id: 3a76f10e405e429ab683744f070fd452
+run_name: righteous-bug-581
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752489247512
+status: 3
+tags: []
+user_id: monica.fernandez
